@@ -9,7 +9,7 @@ It includes the following features:
 - Some but not all Pokémon have received a type change, based off their Pokédex entry and if I thought their typing made sense. The intent was to reduce duplicate type fatigue (Normal/Flying is a good example)
 - Pokémon stats have been rounded up to the nearest value ending in 0, i.e. 10, 20, 30, 40, 50, etc. This was to give every Pokémon a universal small buff.
 - All wild encounters have been changed to allow for a greater variety of Pokémon to be captured.
-- All Pokémon level-up moves have been changed. Generally, a Pokémon will learn a new move every 5 levels up until 50 or 60. For example, Moltres originally learned 3 moves by level-up, but now learns 12
+- All Pokémon level-up moves have been changed. Generally, a Pokémon will learn a new move every 5 levels or upon evolution up until a certain level. For example, Moltres originally learned 3 moves by level-up, but now learns 12
 - GS Ball and Celebi event restored
 - Instant Text scrolling speed option
 - Physical/Special Split
