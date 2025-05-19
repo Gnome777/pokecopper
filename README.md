@@ -1,6 +1,10 @@
-# Pokémon Crystal [![Build Status][ci-badge]][ci]
+# Pokémon Copper
 
-This is a ROMhack of Pokémon Crystal. This is not a difficulty hack or a catch-em-all, although it modifies the difficulty of boss trainers and allows for a wider selection of Pokémon. This is a reimagining of the second generation by me, essentially answering the question "What if I was in charge of making the Pokémon games?"
+This is a ROMhack of Pokémon Crystal.
+
+### Description
+
+Pokémon Copper is not a difficulty hack or a catch-em-all, although it modifies the difficulty of boss trainers and allows for a wider selection of Pokémon. This is a reimagining of the second generation by me, essentially answering the question "What if I was in charge of making the Pokémon games?"
 
 It includes the following features:
 - A modified story, that tries to answer some questions that the original games left unanswered
