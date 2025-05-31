@@ -48,18 +48,9 @@ MeetMomScript:
 	promptbutton
 	special SetDayOfWeek
 .SetDayOfWeek:
-	writetext IsItDSTText
-	yesorno
-	iffalse .WrongDay
-	special InitialSetDSTFlag
-	yesorno
-	iffalse .SetDayOfWeek
+	special InitialClearDSTFlag
 	sjump .DayOfWeekDone
 
-.WrongDay:
-	special InitialClearDSTFlag
-	yesorno
-	iffalse .SetDayOfWeek
 .DayOfWeekDone:
 	writetext ComeHomeForDSTText
 	yesorno
@@ -245,19 +236,8 @@ MomGivesPokegearText:
 	line "that!"
 	done
 
-IsItDSTText:
-	text "Is it Daylight"
-	line "Saving Time now?"
-	done
-
 ComeHomeForDSTText:
-	text "Come home to"
-	line "adjust your clock"
-
-	para "for Daylight"
-	line "Saving Time."
-
-	para "By the way, do you"
+	text "By the way, do you"
 	line "know how to use"
 	cont "the PHONE?"
 	done
