@@ -122,116 +122,49 @@ PrintTempMonStats:
 	next "@"
 
 GetGender:
-; Return the gender of a given monster (wCurPartyMon/wCurOTMon/wCurWildMon).
-; When calling this function, a should be set to an appropriate wMonType value.
+; Determine Pokémon gender based on species gender ratio
 
-; return values:
-; a = 1: f = nc|nz; male
-; a = 0: f = nc|z;  female
-;        f = c:  genderless
-
-; This is determined by comparing the Attack and Speed DVs
-; with the species' gender ratio.
-
-; Figure out what type of monster struct we're looking at.
-
-; 0: PartyMon
-	ld hl, wPartyMon1DVs
-	ld bc, PARTYMON_STRUCT_LENGTH
-	ld a, [wMonType]
-	and a
-	jr z, .PartyMon
-
-; 1: OTPartyMon
-	ld hl, wOTPartyMon1DVs
-	dec a
-	jr z, .PartyMon
-
-; 2: sBoxMon
-	ld hl, sBoxMon1DVs
-	ld bc, BOXMON_STRUCT_LENGTH
-	dec a
-	jr z, .sBoxMon
-
-; 3: Unknown
-	ld hl, wTempMonDVs
-	dec a
-	jr z, .DVs
-
-; else: WildMon
-	ld hl, wEnemyMonDVs
-	jr .DVs
-
-; Get our place in the party/box.
-
-.PartyMon:
-.sBoxMon
-	ld a, [wCurPartyMon]
-	call AddNTimes
-
-.DVs:
-; sBoxMon data is read directly from SRAM.
-	ld a, [wMonType]
-	cp BOXMON
-	ld a, BANK(sBox)
-	call z, OpenSRAM
-
-; Attack DV
-	ld a, [hli]
-	and $f0
-	ld b, a
-; Speed DV
-	ld a, [hl]
-	and $f0
-	swap a
-
-; Put our DVs together.
-	or b
-	ld b, a
-
-; Close SRAM if we were dealing with a sBoxMon.
-	ld a, [wMonType]
-	cp BOXMON
-	call z, CloseSRAM
-
-; We need the gender ratio to do anything with this.
-	push bc
+	; Get gender ratio from BaseData
 	ld a, [wCurPartySpecies]
 	dec a
 	ld hl, BaseData + BASE_GENDER
 	ld bc, BASE_DATA_SIZE
 	call AddNTimes
-	pop bc
-
 	ld a, BANK(BaseData)
 	call GetFarByte
 
-; The higher the ratio, the more likely the monster is to be female.
-
+	; Special cases
 	cp GENDER_UNKNOWN
 	jr z, .Genderless
-
-	and a ; GENDER_F0?
-	jr z, .Male
-
+	cp GENDER_F0
+	jr z, .AllMale
 	cp GENDER_F100
-	jr z, .Female
+	jr z, .AllFemale
 
-; Values below the ratio are male, and vice versa.
+	; Compare random value to ratio
+	ld b, a
+	call Random
 	cp b
 	jr c, .Male
 
 .Female:
-	xor a
+	xor a    ; a = 0
 	ret
 
 .Male:
-	ld a, 1
-	and a
+	ld a, 1  ; a = 1
 	ret
 
 .Genderless:
-	scf
+	scf      ; carry = 1
+	ret
+
+.AllMale:
+	ld a, 1
+	ret
+
+.AllFemale:
+	xor a
 	ret
 
 ListMovePP:

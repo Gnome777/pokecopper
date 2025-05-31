@@ -8,88 +8,43 @@ HiddenPowerDamage:
 	ld hl, wEnemyMonDVs
 .got_dvs
 
-; Power:
+; Power: base 10, +1 per DV point, max 100
 
-; Take the top bit from each stat
+	ld b, 6         ; 6 DVs: Atk, Def, Spd, Spc (combined), HP
+	ld c, 0         ; total DV sum
 
-	; Attack
-	ld a, [hl]
-	swap a
-	and %1000
-
-	; Defense
-	ld b, a
+.sum_loop
 	ld a, [hli]
-	and %1000
-	srl a
-	or b
-
-	; Speed
-	ld b, a
-	ld a, [hl]
+	ld d, a
 	swap a
-	and %1000
-	srl a
-	srl a
-	or b
+	and $0F         ; upper nibble
+	add c
+	ld c, a
+	ld a, d
+	and $0F         ; lower nibble
+	add c
+	ld c, a
+	dec b
+	jr nz, .sum_loop
 
-	; Special
-	ld b, a
-	ld a, [hl]
-	and %1000
-	srl a
-	srl a
-	srl a
-	or b
-
-; Multiply by 5
-	ld b, a
-	add a
-	add a
-	add b
-
-; Add Special & 3
-	ld b, a
-	ld a, [hld]
-	and %0011
-	add b
-
-; Divide by 2 and add 30 + 1
-	srl a
-	add 30
-	inc a
-
+	ld a, c
+	add 10          ; base power 10
 	ld d, a
 
-; Type:
+; Type: determined solely by Special DV (upper 4 bits)
 
-	; Def & 3
-	ld a, [hl]
-	and %0011
+	ld a, [hl]        ; hl now points to Special/Speed DV byte
+	swap a            ; move upper nibble (Special DV) to lower
+	and $0F           ; mask to 0–15
+	inc a             ; shift from 0–15 to 1–16
 	ld b, a
 
-	; + (Atk & 3) << 2
+	; Assume table of valid type IDs (skip Normal and Bird)
+	ld hl, HiddenPowerTypeTable
+	dec b
+	ld c, 0
+	add hl, bc
 	ld a, [hl]
-	and %0011 << 4
-	swap a
-	add a
-	add a
-	or b
-
-; Skip Normal
-	inc a
-
-; Skip Bird
-	cp BIRD
-	jr c, .done
-	inc a
-
-; Skip unused types
-	cp UNUSED_TYPES
-	jr c, .done
-	add UNUSED_TYPES_END - UNUSED_TYPES
-
-.done
 
 ; Overwrite the current move type.
 	push af
@@ -106,3 +61,21 @@ HiddenPowerDamage:
 	pop af
 	ld d, a
 	ret
+
+HiddenPowerTypeTable:
+	db FIGHTING
+	db FLYING
+	db POISON
+	db FIRE
+	db WATER
+	db GRASS
+	db ELECTRIC
+	db PSYCHIC_TYPE
+	db ICE
+	db GROUND
+	db ROCK
+	db BUG
+	db GHOST
+	db DARK
+	db STEEL
+	db DRAGON

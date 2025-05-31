@@ -681,21 +681,68 @@ DayCare_InitBreeding:
 	ld e, c
 
 .GotDVs:
-	ld a, [de]
-	inc de
-	and $f
+; Get highest DV per stat from BreedMon1 and BreedMon2
+
+	ld a, [wBreedMon1DVs]
 	ld b, a
-	ld a, [hl]
-	and $f0
-	add b
-	ld [hli], a
-	ld a, [de]
-	and $7
+	ld a, [wBreedMon2DVs]
+	ld c, a
+
+	; Attack (high nibble)
+	ld a, b
+	and $F0
+	ld d, a
+	ld a, c
+	and $F0
+	cp d
+	jr nc, .atk2
+	ld a, d
+.atk2
+	ld d, a
+
+	; Defense (low nibble)
+	ld a, b
+	and $0F
+	ld e, a
+	ld a, c
+	and $0F
+	cp e
+	jr nc, .def2
+	ld a, e
+.def2
+	or d
+	ld [wEggMonDVs], a ; store result
+
+	ld a, [wBreedMon1DVs + 1]
 	ld b, a
-	ld a, [hl]
-	and $f8
-	add b
-	ld [hl], a
+	ld a, [wBreedMon2DVs + 1]
+	ld c, a
+
+	; Speed (high nibble)
+	ld a, b
+	and $F0
+	ld d, a
+	ld a, c
+	and $F0
+	cp d
+	jr nc, .spd2
+	ld a, d
+.spd2
+	ld d, a
+
+	; Special (low nibble)
+	ld a, b
+	and $0F
+	ld e, a
+	ld a, c
+	and $0F
+	cp e
+	jr nc, .spc2
+	ld a, e
+.spc2
+	or d
+	ld [wEggMonDVs + 1], a
+
 
 .SkipDVs:
 	ld hl, wStringBuffer1
