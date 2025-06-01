@@ -17,7 +17,7 @@ It includes the following features:
 - GS Ball and Celebi event restored
 - Instant Text scrolling speed option
 - Physical/Special Split
-- Running Shoes (credit to [Tom Wang](https://github.com/froyomuffin) and [Seasick](https://github.com/SeasickShore)
+- Running Shoes (credit to [Tom Wang](https://github.com/froyomuffin) and [Seasick](https://github.com/SeasickShore))
 - Hail is added as a move and weather effect
 - Show an icon for time of day and current weather
 - Removal of Stat Experience
@@ -29,9 +29,10 @@ It includes the following features:
 - Move Reminder
 - 100 TMs
 - Infinitely reusable TMs
-- Show move name for TMs and HMs when obtained
+- HMs renamed to FMs (Field Moves)
+- Show move name for TMs and FMs when obtained
 - Fish while surfing
-- Removal of Cut as an HM, in replacement with the 'Chainsaw' item
+- Removal of Cut as an FM, in replacement with the 'Chainsaw' item
 - Allow using a field move if a Pokémon in your party can learn it
 - Repels will ask if you want to use another
 - Addition of a Master Repel, that acts as a toggleable infinite repel
