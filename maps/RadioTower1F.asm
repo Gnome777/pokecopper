@@ -343,7 +343,7 @@ RadioTower1FRadioCardWomanQuestion3Text:
 	text "Bull's-eye!"
 	line "Question 3:"
 
-	para "Does HM01 contain"
+	para "Does FM01 contain"
 	line "the move FLASH?"
 	done
 

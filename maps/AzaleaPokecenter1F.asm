@@ -27,7 +27,7 @@ AzaleaPokecenter1FPokefanFScript:
 
 AzaleaPokecenter1FGentlemanText:
 	text "Do your #MON"
-	line "know HM moves?"
+	line "know FM moves?"
 
 	para "Those moves can"
 	line "be used even if"

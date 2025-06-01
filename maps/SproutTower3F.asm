@@ -157,7 +157,7 @@ SproutTowerElderLecturesRivalText:
 	cont "trainer."
 
 	para "As promised, here"
-	line "is your HM."
+	line "is your FM."
 
 	para "But let me say"
 	line "this: You should"
@@ -238,7 +238,7 @@ SageLiTakeThisFlashText:
 	line "this move."
 
 	para "Take this FLASH"
-	line "HM."
+	line "FM."
 	done
 
 SageLiFlashExplanationText:
@@ -299,7 +299,7 @@ SageTroyAfterBattleText:
 	done
 
 SageNealSeenText:
-	text "The ELDER's HM"
+	text "The ELDER's FM"
 	line "lights even pitch-"
 	cont "black darkness."
 	done

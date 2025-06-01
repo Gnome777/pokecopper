@@ -733,7 +733,7 @@ RocketBaseLanceElectrodeDoneText:
 
 RocketBaseReceivedHM06Text: ; unreferenced
 	text "<PLAYER> received"
-	line "HM06."
+	line "FM06."
 	done
 
 RocketBaseLanceWhirlpoolText:

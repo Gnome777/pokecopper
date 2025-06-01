@@ -83,7 +83,7 @@ BirdKeeperRoyBeatenText:
 
 BirdKeeperRoyAfterBattleText:
 	text "You have #MON"
-	line "that know the HM"
+	line "that know the FM"
 
 	para "move FLY, don't"
 	line "you? I envy you."

@@ -795,7 +795,7 @@ Text_CharcoalMasterIntro:
 	done
 
 Text_CharcoalMasterOutro:
-	text "That's the CUT HM."
+	text "That's the CUT FM."
 	line "Teach that to a"
 
 	para "#MON to clear"
