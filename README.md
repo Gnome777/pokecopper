@@ -27,7 +27,6 @@ It includes the following features:
 - Portable PC
 - Battle Autoprompts
 - Move Reminder
-- 100 TMs
 - Infinitely reusable TMs
 - HMs renamed to FMs (Field Moves)
 - Show move name for TMs and FMs when obtained

@@ -223,7 +223,7 @@ GiveTakePartyMonItem:
 	call ClearPalettes
 	call .GiveItem
 	call ClearPalettes
-	call LoadFontsBattleExtra
+	farcall LoadPartyMenuGFX
 	call ExitMenu
 	ld a, 0
 	ret
