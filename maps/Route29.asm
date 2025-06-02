@@ -15,6 +15,7 @@ Route29_MapScripts:
 
 	def_callbacks
 	callback MAPCALLBACK_OBJECTS, Route29TuscanyCallback
+	callback MAPCALLBACK_NEWMAP, Route29ForceShiny	
 
 Route29Noop1Scene:
 	end
@@ -34,6 +35,10 @@ Route29TuscanyCallback:
 	readvar VAR_WEEKDAY
 	ifnotequal TUESDAY, .TuscanyDisappears
 	appear ROUTE29_TUSCANY
+	endcallback
+
+Route29ForceShiny:
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
 	endcallback
 
 Route29Tutorial1:

@@ -4,8 +4,13 @@ Pokepic::
 	call MenuBox
 	call UpdateSprites
 	call ApplyTilemap
-	ld b, SCGB_POKEPIC
-	call GetSGBLayout
+	ld de, wBGPals1 palette PAL_BG_TEXT color 1
+	; Assuming bc points to the mon's DVs
+	ld a, [wCurPartySpecies]
+	call GetMonNormalOrShinyPalettePointer
+	ld de, wBGPals1 palette PAL_BG_TEXT color 1
+	call LoadPalette_White_Col1_Col2_Black
+	call UpdateTimePals
 	xor a
 	ldh [hBGMapMode], a
 	ld a, [wCurPartySpecies]
@@ -36,7 +41,7 @@ ClosePokepic::
 	xor a
 	ldh [hBGMapMode], a
 	call LoadOverworldTilemapAndAttrmapPals
-	call ApplyTilemap
+	call CopyTilemapAtOnce
 	call UpdateSprites
 	call LoadStandardFont
 	ret
