@@ -40,6 +40,11 @@ WantsToBattleText::
 	line "wants to battle!"
 	prompt
 
+WantToBattlePluralText::
+	text "<ENEMY>"
+	line "want to battle!"
+	prompt
+
 BattleText_WildFled:
 	text "Wild @"
 	text_ram wEnemyMonNickname
@@ -185,6 +190,11 @@ GotMoneyForWinningText:
 BattleText_EnemyWasDefeated:
 	text "<ENEMY>"
 	line "was defeated!"
+	prompt
+
+BattleText_PluralEnemyWereDefeated:
+	text "<ENEMY>"
+	line "were defeated!"
 	prompt
 
 TiedAgainstText:
@@ -1125,3 +1135,14 @@ PeltedByHailText:
 	text "<USER>"
 	line "is pelted by HAIL!"
 	prompt
+
+BattleText_PluralEnemyAreAboutToUseWillPlayerChangeMon:
+	text "<ENEMY>"
+	line "are about to use"
+	cont "@"
+	text_ram wEnemyMonNickname
+	text "."
+
+	para "Will <PLAYER>"
+	line "change #MON?"
+	done
