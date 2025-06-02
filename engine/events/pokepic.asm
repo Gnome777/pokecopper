@@ -5,11 +5,7 @@ Pokepic::
 	call UpdateSprites
 	call ApplyTilemap
 	ld de, wBGPals1 palette PAL_BG_TEXT color 1
-	; Assuming bc points to the mon's DVs
-	ld a, [wCurPartySpecies]
-	call GetMonNormalOrShinyPalettePointer
-	ld de, wBGPals1 palette PAL_BG_TEXT color 1
-	call LoadPalette_White_Col1_Col2_Black
+	farcall LoadPokemonPalette
 	call UpdateTimePals
 	xor a
 	ldh [hBGMapMode], a
