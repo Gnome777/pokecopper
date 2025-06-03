@@ -11,9 +11,9 @@ BillsFamilysHouse_MapScripts:
 BillScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_EEVEE
-	iftrue .GotEevee
-	writetext BillTakeThisEeveeText
+	checkevent EVENT_GOT_PORYGON
+	iftrue .GotPorygon
+	writetext BillTakeThisPorygonText
 	yesorno
 	iffalse .Refused
 	writetext BillImCountingOnYouText
@@ -21,12 +21,12 @@ BillScript:
 	waitsfx
 	readvar VAR_PARTYCOUNT
 	ifequal PARTY_LENGTH, .NoRoom
-	writetext ReceivedEeveeText
+	writetext ReceivedPorygonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
-	givepoke EEVEE, 20
-	setevent EVENT_GOT_EEVEE
-	writetext BillEeveeMayEvolveText
+	givepoke PORYGON, 20
+	setevent EVENT_GOT_PORYGON
+	writetext BillPorygonMayEvolveText
 	waitbutton
 	closetext
 	end
@@ -38,12 +38,12 @@ BillScript:
 	end
 
 .Refused:
-	writetext BillNoEeveeText
+	writetext BillNoPorygonText
 	waitbutton
 	closetext
 	end
 
-.GotEevee:
+.GotPorygon:
 	writetext BillPopWontWorkText
 	waitbutton
 	closetext
@@ -106,10 +106,10 @@ BillsHouseBookshelf2:
 BillsHouseRadio:
 	jumpstd Radio2Script
 
-BillTakeThisEeveeText:
+BillTakeThisPorygonText:
 	text "BILL: Hi, <PLAYER>!"
 	line "Do us a favor and"
-	cont "take this EEVEE."
+	cont "take this PORYGON."
 
 	para "It came over when"
 	line "I was adjusting"
@@ -140,14 +140,14 @@ BillImCountingOnYouText:
 	line "it!"
 	done
 
-ReceivedEeveeText:
+ReceivedPorygonText:
 	text "<PLAYER> received"
-	line "EEVEE!"
+	line "PORYGON!"
 	done
 
-BillEeveeMayEvolveText:
+BillPorygonMayEvolveText:
 	text "BILL: PROF.ELM"
-	line "claims EEVEE may"
+	line "claims PORYGON may"
 
 	para "evolve in new and"
 	line "unknown ways."
@@ -159,7 +159,7 @@ BillPartyFullText:
 	cont "more #MON."
 	done
 
-BillNoEeveeText:
+BillNoPorygonText:
 	text "Oh… Now what to"
 	line "do?"
 	done
