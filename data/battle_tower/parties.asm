@@ -15,7 +15,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 35000
 	bigdw 40000
-	dn 13, 13, 11, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 5, 15, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -41,7 +41,7 @@ BattleTowerMons:
 	bigdw 35000
 	bigdw 40000
 	bigdw 40000
-	dn 14, 13, 15, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 10, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -67,7 +67,7 @@ BattleTowerMons:
 	bigdw 45000
 	bigdw 50000
 	bigdw 40000
-	dn 13, 11, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 15, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -93,7 +93,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 7, 15, 13, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 20, 25, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -119,7 +119,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 30000
 	bigdw 30000
-	dn 14, 15, 12, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 5, 10, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -145,7 +145,7 @@ BattleTowerMons:
 	bigdw 33300
 	bigdw 30000
 	bigdw 30000
-	dn 15, 14, 15, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 10, 20, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -171,7 +171,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 35000
-	dn 11, 11, 13, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 5, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -197,7 +197,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 13, 11, 15, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 20, 10, 25 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -223,7 +223,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 15, 13, 14, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 15, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -249,7 +249,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 15, 11, 11, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 20, 15, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -275,7 +275,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 30000
 	bigdw 30000
-	dn 15, 11, 13, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 5, 5, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -301,7 +301,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 14, 15, 13, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 5, 20, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -327,7 +327,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 33000
 	bigdw 30000
-	dn 15, 13, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 10, 20, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -353,7 +353,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 14, 13, 15, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 10, 15, 30 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -379,7 +379,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 13, 15, 12, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 10, 20, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -405,7 +405,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 14, 15, 15, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 10, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -431,7 +431,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 15, 14, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 5, 10, 25 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -457,7 +457,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 15, 7, 15, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 10, 20, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -483,7 +483,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 15, 15, 15, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 0, 0, 0 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -509,7 +509,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 6, 5, 5, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 15, 30, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -535,7 +535,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 7, 3, 6, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 10, 15, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -564,7 +564,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 12, 15, 11, 12 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 10, 10, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -590,7 +590,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 13, 11, 13, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 10, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -616,7 +616,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 10, 15, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 15, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -642,7 +642,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 30000
 	bigdw 50000
-	dn 15, 15, 15, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 15, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -668,7 +668,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 50000
 	bigdw 40000
-	dn 15, 13, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 10, 10, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -694,7 +694,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 55000
 	bigdw 50000
-	dn 13, 11, 15, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 20, 5, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -720,7 +720,7 @@ BattleTowerMons:
 	bigdw 45000
 	bigdw 30000
 	bigdw 45000
-	dn 13, 15, 13, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -746,7 +746,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 45000
 	bigdw 45000
-	dn 15, 13, 14, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 10, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -772,7 +772,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 50000
 	bigdw 45000
-	dn 15, 11, 11, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 5, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -798,7 +798,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 50000
-	dn 11, 13, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 25, 10, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -824,7 +824,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 55000
 	bigdw 30000
-	dn 15, 14, 13, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 5, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -850,7 +850,7 @@ BattleTowerMons:
 	bigdw 45000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 12, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 20, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -876,7 +876,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 45000
 	bigdw 50000
-	dn 15, 13, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 25, 20, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -902,7 +902,7 @@ BattleTowerMons:
 	bigdw 35000
 	bigdw 50000
 	bigdw 30000
-	dn 15, 11, 15, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 15, 15, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -928,7 +928,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 30000
 	bigdw 30000
-	dn 15, 11, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 10, 5, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -954,7 +954,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 40000
 	bigdw 40000
-	dn 14, 13, 15, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 5, 15, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -980,7 +980,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 40000
 	bigdw 40000
-	dn 13, 15, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 10, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1006,7 +1006,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 40000
 	bigdw 40000
-	dn 12, 7, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 5, 5, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1032,7 +1032,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 12, 7, 7, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 10, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1058,7 +1058,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 5, 6, 4, 6 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 15, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1084,7 +1084,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 5, 5, 4, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 10, 15, 5 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1113,7 +1113,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 55000
-	dn 13, 11, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 20, 20, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1139,7 +1139,7 @@ BattleTowerMons:
 	bigdw 55000
 	bigdw 55000
 	bigdw 50000
-	dn 13, 13, 15, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 15, 5, 25 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1165,7 +1165,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 15, 15, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 10, 20, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1191,7 +1191,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 30000
 	bigdw 50000
-	dn 15, 11, 14, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1217,7 +1217,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 50000
 	bigdw 50000
-	dn 14, 15, 15, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 10, 20, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1243,7 +1243,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 55000
 	bigdw 50000
-	dn 13, 15, 13, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 5, 10, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1269,7 +1269,7 @@ BattleTowerMons:
 	bigdw 45000
 	bigdw 30000
 	bigdw 45000
-	dn 15, 11, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 20, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1295,7 +1295,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 45000
 	bigdw 45000
-	dn 15, 13, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 15, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1321,7 +1321,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 50000
 	bigdw 45000
-	dn 15, 13, 11, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 15, 10, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1347,7 +1347,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 50000
-	dn 14, 15, 13, 12 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 10, 10, 35 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1373,7 +1373,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 55000
 	bigdw 30000
-	dn 13, 15, 13, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 20, 5, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1399,7 +1399,7 @@ BattleTowerMons:
 	bigdw 45000
 	bigdw 50000
 	bigdw 30000
-	dn 13, 13, 14, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 20, 5, 10 ; PP
 	db 255 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1425,7 +1425,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 45000
 	bigdw 50000
-	dn 11, 13, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 30, 15, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1451,7 +1451,7 @@ BattleTowerMons:
 	bigdw 35000
 	bigdw 50000
 	bigdw 30000
-	dn 15, 13, 14, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 25, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1477,7 +1477,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 30000
 	bigdw 30000
-	dn 13, 13, 14, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1503,7 +1503,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 14, 15, 15, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 25, 20, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1529,7 +1529,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 47000
 	bigdw 45000
-	dn 15, 14, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 10, 10, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1555,7 +1555,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 7, 15, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 30, 15, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1581,7 +1581,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 7, 7, 4, 5 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 10, 20, 30 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1607,7 +1607,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 6, 7, 7, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 20, 35, 20 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1633,7 +1633,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 7, 7, 6, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 25, 15, 30 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1662,7 +1662,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 13, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 5, 10, 15 ; PP
 	db 255 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1688,7 +1688,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 13, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 20, 5, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1714,7 +1714,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 14, 13, 13, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 15, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1740,7 +1740,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 13, 14, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 10, 10, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1766,7 +1766,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 14, 15, 13, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1792,7 +1792,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 55000
 	bigdw 50000
-	dn 13, 13, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 20, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1818,7 +1818,7 @@ BattleTowerMons:
 	bigdw 45000
 	bigdw 50000
 	bigdw 45000
-	dn 15, 13, 11, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 15, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1844,7 +1844,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 11, 15, 14, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 20, 25, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1870,7 +1870,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 50000
 	bigdw 45000
-	dn 13, 13, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 20, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1896,7 +1896,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 40000
 	bigdw 50000
-	dn 11, 13, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 25, 20, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1922,7 +1922,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 14, 11, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 5, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1948,7 +1948,7 @@ BattleTowerMons:
 	bigdw 45000
 	bigdw 50000
 	bigdw 50000
-	dn 11, 15, 12, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 10, 10, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -1974,7 +1974,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 11, 12, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 30, 30, 20, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2000,7 +2000,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 14, 11, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 25, 30, 15, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2026,7 +2026,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 10, 7, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 40, 10, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2052,7 +2052,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 14, 15, 15, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 25, 5, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2078,7 +2078,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 14, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 10, 15, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2104,7 +2104,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 7, 14, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 20, 10, 25 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2130,7 +2130,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 7, 7, 7, 10 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 25, 15, 15, 20 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2156,7 +2156,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 7, 5, 6, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 40, 10, 20, 30 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2182,7 +2182,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 6, 5, 7, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 30, 15, 20, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2211,7 +2211,7 @@ BattleTowerMons:
 	bigdw 60000
 	bigdw 50000
 	bigdw 55000
-	dn 13, 13, 15, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 5, 5, 20 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2237,7 +2237,7 @@ BattleTowerMons:
 	bigdw 60000
 	bigdw 60000
 	bigdw 60000
-	dn 13, 13, 15, 12 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 15, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2263,7 +2263,7 @@ BattleTowerMons:
 	bigdw 60000
 	bigdw 60000
 	bigdw 55000
-	dn 15, 13, 12, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 10, 10, 20 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2289,7 +2289,7 @@ BattleTowerMons:
 	bigdw 55000
 	bigdw 60000
 	bigdw 55000
-	dn 15, 13, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 15, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2315,7 +2315,7 @@ BattleTowerMons:
 	bigdw 60000
 	bigdw 55000
 	bigdw 60000
-	dn 13, 13, 13, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 15, 10, 5 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2341,7 +2341,7 @@ BattleTowerMons:
 	bigdw 57000
 	bigdw 55000
 	bigdw 55000
-	dn 14, 13, 15, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 20, 15, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2367,7 +2367,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 50000
 	bigdw 45000
-	dn 13, 15, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 20, 30, 35 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2393,7 +2393,7 @@ BattleTowerMons:
 	bigdw 45000
 	bigdw 50000
 	bigdw 50000
-	dn 13, 15, 13, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 10, 20 ; PP
 	db 15 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2419,7 +2419,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 40000
 	bigdw 44000
-	dn 15, 15, 14, 12 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 5, 15 ; PP
 	db 13 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2445,7 +2445,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 45000
 	bigdw 40000
-	dn 15, 15, 15, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 20, 15, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2471,7 +2471,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 45000
 	bigdw 50000
-	dn 15, 7, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 20, 5, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2497,7 +2497,7 @@ BattleTowerMons:
 	bigdw 54000
 	bigdw 40000
 	bigdw 50000
-	dn 7, 13, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 5, 20, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2523,7 +2523,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 45000
 	bigdw 45000
-	dn 15, 13, 13, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 5, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2549,7 +2549,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 40000
 	bigdw 50000
-	dn 14, 15, 15, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 5, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2575,7 +2575,7 @@ BattleTowerMons:
 	bigdw 45000
 	bigdw 40000
 	bigdw 50000
-	dn 15, 13, 13, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 15, 20, 5 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2601,7 +2601,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 40000
-	dn 13, 7, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 25, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2627,7 +2627,7 @@ BattleTowerMons:
 	bigdw 55000
 	bigdw 45000
 	bigdw 40000
-	dn 12, 15, 13, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 10, 5, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2653,7 +2653,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 40000
 	bigdw 45000
-	dn 13, 13, 13, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 10, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2679,7 +2679,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 40000
 	bigdw 40000
-	dn 4, 5, 5, 6 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 15, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2705,7 +2705,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 40000
 	bigdw 40000
-	dn 7, 5, 6, 5 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 15, 5, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2731,7 +2731,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 40000
 	bigdw 40000
-	dn 4, 5, 5, 6 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 5, 20, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2760,7 +2760,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 60000
 	bigdw 60000
-	dn 13, 13, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 15, 5, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2786,7 +2786,7 @@ BattleTowerMons:
 	bigdw 55000
 	bigdw 60000
 	bigdw 55000
-	dn 15, 13, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 10, 10, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2812,7 +2812,7 @@ BattleTowerMons:
 	bigdw 55000
 	bigdw 60000
 	bigdw 55000
-	dn 15, 11, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 15, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2838,7 +2838,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 55000
-	dn 13, 13, 13, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 20, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2864,7 +2864,7 @@ BattleTowerMons:
 	bigdw 45000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 13, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 5, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2890,7 +2890,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 55000
 	bigdw 50000
-	dn 13, 13, 15, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 20, 15, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2916,7 +2916,7 @@ BattleTowerMons:
 	bigdw 45000
 	bigdw 50000
 	bigdw 45000
-	dn 15, 13, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 20, 5, 25 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2942,7 +2942,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 45000
 	bigdw 45000
-	dn 15, 13, 13, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 20, 10, 25 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2968,7 +2968,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 50000
 	bigdw 45000
-	dn 13, 13, 15, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 15, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -2994,7 +2994,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 13, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 5, 10, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3020,7 +3020,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 55000
 	bigdw 50000
-	dn 15, 13, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 15, 5, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3046,7 +3046,7 @@ BattleTowerMons:
 	bigdw 45000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 11, 14, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 25, 15, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3072,7 +3072,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 45000
 	bigdw 50000
-	dn 15, 11, 12, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 10, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3098,7 +3098,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 10, 15, 12 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3124,7 +3124,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 13, 15, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 10, 10, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3150,7 +3150,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 15, 14, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3176,7 +3176,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 14, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 10, 40, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3202,7 +3202,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 11, 15, 10 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3228,7 +3228,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 11, 7, 6, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 20, 5, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3254,7 +3254,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 6, 6, 5, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 5, 5, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3280,7 +3280,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 7, 6, 5, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 15, 20 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3309,7 +3309,7 @@ BattleTowerMons:
 	bigdw 55000
 	bigdw 50000
 	bigdw 60000
-	dn 15, 11, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 5, 15, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3335,7 +3335,7 @@ BattleTowerMons:
 	bigdw 60000
 	bigdw 60000
 	bigdw 50000
-	dn 11, 15, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 15, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3361,7 +3361,7 @@ BattleTowerMons:
 	bigdw 55000
 	bigdw 50000
 	bigdw 58000
-	dn 13, 13, 13, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 5, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3387,7 +3387,7 @@ BattleTowerMons:
 	bigdw 55000
 	bigdw 58000
 	bigdw 50000
-	dn 13, 15, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 10, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3413,7 +3413,7 @@ BattleTowerMons:
 	bigdw 60000
 	bigdw 55000
 	bigdw 50000
-	dn 13, 13, 13, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 10, 5, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3439,7 +3439,7 @@ BattleTowerMons:
 	bigdw 55000
 	bigdw 60000
 	bigdw 55000
-	dn 13, 13, 12, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 15, 20, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3465,7 +3465,7 @@ BattleTowerMons:
 	bigdw 45000
 	bigdw 50000
 	bigdw 45000
-	dn 13, 11, 13, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 10, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3491,7 +3491,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 45000
 	bigdw 45000
-	dn 13, 11, 13, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 20, 20, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3517,7 +3517,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 50000
 	bigdw 45000
-	dn 13, 13, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 5, 10, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3543,7 +3543,7 @@ BattleTowerMons:
 	bigdw 45000
 	bigdw 45000
 	bigdw 50000
-	dn 15, 13, 14, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 20, 10, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3569,7 +3569,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 55000
 	bigdw 50000
-	dn 13, 11, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 15, 5, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3595,7 +3595,7 @@ BattleTowerMons:
 	bigdw 45000
 	bigdw 50000
 	bigdw 50000
-	dn 13, 14, 13, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 10, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3621,7 +3621,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 45000
 	bigdw 50000
-	dn 15, 13, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 10, 5, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3647,7 +3647,7 @@ BattleTowerMons:
 	bigdw 45000
 	bigdw 50000
 	bigdw 50000
-	dn 11, 13, 15, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 15, 10, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3673,7 +3673,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 11, 13, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 15, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3699,7 +3699,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 14, 15, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 30, 40, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3725,7 +3725,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 14, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 10, 15, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3751,7 +3751,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 7, 15, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 10, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3777,7 +3777,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 7, 6, 4, 4 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 5, 5 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3803,7 +3803,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 5, 6, 4, 4 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 10, 5, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3829,7 +3829,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 7, 6, 6, 4 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 15, 5, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3858,7 +3858,7 @@ BattleTowerMons:
 	bigdw 60000
 	bigdw 55000
 	bigdw 55000
-	dn 15, 13, 14, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 15, 15, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3884,7 +3884,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 55500
 	bigdw 60000
-	dn 13, 11, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 10, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3910,7 +3910,7 @@ BattleTowerMons:
 	bigdw 55000
 	bigdw 55000
 	bigdw 55000
-	dn 15, 13, 13, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 15, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3936,7 +3936,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 30000
 	bigdw 50000
-	dn 15, 13, 13, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 15, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3962,7 +3962,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 55000
 	bigdw 50000
-	dn 13, 15, 13, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -3988,7 +3988,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 55000
 	bigdw 50000
-	dn 13, 15, 13, 11 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4014,7 +4014,7 @@ BattleTowerMons:
 	bigdw 45000
 	bigdw 55000
 	bigdw 50000
-	dn 13, 14, 13, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 15, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4040,7 +4040,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 45000
 	bigdw 50000
-	dn 15, 13, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 10, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4066,7 +4066,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 55000
 	bigdw 50000
-	dn 15, 11, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 5, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4092,7 +4092,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 45000
-	dn 13, 13, 13, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 15, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4118,7 +4118,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 55000
 	bigdw 50000
-	dn 13, 15, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 20, 5, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4144,7 +4144,7 @@ BattleTowerMons:
 	bigdw 45000
 	bigdw 50000
 	bigdw 50000
-	dn 13, 15, 13, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 5, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4170,7 +4170,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 45000
 	bigdw 50000
-	dn 13, 15, 13, 12 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 10, 5, 35 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4196,7 +4196,7 @@ BattleTowerMons:
 	bigdw 35000
 	bigdw 50000
 	bigdw 50000
-	dn 13, 13, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 25, 15, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4222,7 +4222,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 40000
 	bigdw 50000
-	dn 13, 13, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 5, 25, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4248,7 +4248,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 40000
 	bigdw 50000
-	dn 15, 15, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 10, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4274,7 +4274,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 40000
 	bigdw 50000
-	dn 15, 15, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 5, 20, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4300,7 +4300,7 @@ BattleTowerMons:
 	bigdw 40000
 	bigdw 50000
 	bigdw 40000
-	dn 15, 13, 13, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 10, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4326,7 +4326,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 6, 5, 6, 5 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 5, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4352,7 +4352,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 7, 4, 6, 4 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 25, 15, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4378,7 +4378,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 7, 6, 5, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 15, 5, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4407,7 +4407,7 @@ BattleTowerMons:
 	bigdw 55000
 	bigdw 60000
 	bigdw 55000
-	dn 15, 13, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 10, 5, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4433,7 +4433,7 @@ BattleTowerMons:
 	bigdw 56000
 	bigdw 60000
 	bigdw 60000
-	dn 15, 13, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 5, 15, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4459,7 +4459,7 @@ BattleTowerMons:
 	bigdw 60000
 	bigdw 55000
 	bigdw 60000
-	dn 13, 15, 13, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 15, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4485,7 +4485,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 13, 11, 13, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 5, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4511,7 +4511,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 13, 12, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 35, 30, 5, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4537,7 +4537,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 55000
 	bigdw 50000
-	dn 15, 13, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 10, 20, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4563,7 +4563,7 @@ BattleTowerMons:
 	bigdw 55000
 	bigdw 50000
 	bigdw 45000
-	dn 13, 15, 13, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 15, 5, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4589,7 +4589,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 45000
 	bigdw 50000
-	dn 13, 15, 13, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 15, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4615,7 +4615,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 55000
-	dn 11, 13, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 15, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4641,7 +4641,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 55000
 	bigdw 50000
-	dn 13, 13, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 15, 5, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4667,7 +4667,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 55000
 	bigdw 50000
-	dn 13, 13, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 5, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4693,7 +4693,7 @@ BattleTowerMons:
 	bigdw 55000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 14, 15, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 15, 10, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4719,7 +4719,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 45000
 	bigdw 55000
-	dn 13, 15, 13, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 15, 5, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4745,7 +4745,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 11, 13, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 5, 10, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4771,7 +4771,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 13, 11, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 15, 5, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4797,7 +4797,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 14, 15, 15, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 25, 10, 20 ; PP
 	db 255 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4823,7 +4823,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 14, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 20, 10, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4849,7 +4849,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 7, 15, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 15, 15, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4875,7 +4875,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 4, 7, 5, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 10, 15, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4901,7 +4901,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 6, 5, 7, 6 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 5, 15, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4927,7 +4927,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 5, 4, 4, 4 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 10, 15, 5 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4956,7 +4956,7 @@ BattleTowerMons:
 	bigdw 60000
 	bigdw 60000
 	bigdw 60000
-	dn 15, 13, 14, 13 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 15, 20, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -4982,7 +4982,7 @@ BattleTowerMons:
 	bigdw 60000
 	bigdw 60000
 	bigdw 60000
-	dn 15, 13, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 5, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -5008,7 +5008,7 @@ BattleTowerMons:
 	bigdw 60000
 	bigdw 60000
 	bigdw 60000
-	dn 13, 15, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 20, 10, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -5034,7 +5034,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 30000
 	bigdw 50000
-	dn 15, 13, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 20, 20, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -5060,7 +5060,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 13, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -5086,7 +5086,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 55000
 	bigdw 50000
-	dn 13, 13, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 5, 15, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -5112,7 +5112,7 @@ BattleTowerMons:
 	bigdw 55000
 	bigdw 55000
 	bigdw 55000
-	dn 15, 14, 13, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 10, 20, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -5138,7 +5138,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 45000
 	bigdw 45000
-	dn 15, 11, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 15, 5, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -5164,7 +5164,7 @@ BattleTowerMons:
 	bigdw 55000
 	bigdw 50000
 	bigdw 45000
-	dn 15, 13, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 10, 5, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -5190,7 +5190,7 @@ BattleTowerMons:
 	bigdw 55000
 	bigdw 60000
 	bigdw 50000
-	dn 15, 13, 13, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 5, 15, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -5216,7 +5216,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 55000
 	bigdw 50000
-	dn 15, 13, 12, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 25, 5, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -5242,7 +5242,7 @@ BattleTowerMons:
 	bigdw 55000
 	bigdw 50000
 	bigdw 55000
-	dn 11, 13, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 5, 20, 15 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -5268,7 +5268,7 @@ BattleTowerMons:
 	bigdw 48000
 	bigdw 45000
 	bigdw 50000
-	dn 15, 13, 14, 15 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 5, 15, 20 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -5294,7 +5294,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 45000
-	dn 15, 11, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 25, 5, 20, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -5320,7 +5320,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 30000
 	bigdw 30000
-	dn 13, 13, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 5, 5, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -5346,7 +5346,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 14, 15, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 5, 5, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -5372,7 +5372,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 14, 15, 14 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 10, 10, 5, 5 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -5398,7 +5398,7 @@ BattleTowerMons:
 	bigdw 50000
 	bigdw 50000
 	bigdw 50000
-	dn 15, 11, 14, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 5, 5, 10 ; PP
 	db 100 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -5424,7 +5424,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 7, 4, 4, 6 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 5, 10, 10, 5 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -5450,7 +5450,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 6, 7, 7, 6 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 20, 15, 15, 15 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
@@ -5476,7 +5476,7 @@ BattleTowerMons:
 	bigdw 30000
 	bigdw 30000
 	bigdw 30000
-	dn 7, 6, 5, 7 ; DVs
+	dn 14, 14, 14, 14 ; DVs
 	db 15, 5, 5, 10 ; PP
 	db 0 ; Happiness
 	db 0, 0, 0 ; Pokerus, Caught data
