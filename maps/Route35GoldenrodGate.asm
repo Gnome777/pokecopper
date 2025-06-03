@@ -13,10 +13,10 @@ RandyScript:
 	opentext
 	checkevent EVENT_GOT_HP_UP_FROM_RANDY
 	iftrue .gothpup
-	checkevent EVENT_GAVE_KENYA
+	checkevent EVENT_GAVE_COURIER
 	iftrue .questcomplete
-	checkevent EVENT_GOT_KENYA
-	iftrue .alreadyhavekenya
+	checkevent EVENT_GOT_COURIER
+	iftrue .alreadyhavecourier
 	writetext Route35GoldenrodGateRandyAskTakeThisMonToMyFriendText
 	yesorno
 	iffalse .refused
@@ -28,10 +28,10 @@ RandyScript:
 	writetext Route35GoldenrodGatePlayerReceivedAMonWithMailText
 	playsound SFX_KEY_ITEM
 	waitsfx
-	givepoke SPEAROW, 10, NO_ITEM, GiftSpearowName, GiftSpearowOTName
-	givepokemail GiftSpearowMail
-	setevent EVENT_GOT_KENYA
-.alreadyhavekenya
+	givepoke FARFETCH_D, 10, NO_ITEM, GiftFarfetchdName, GiftFarfetchdOTName
+	givepokemail GiftFarfetchdMail
+	setevent EVENT_GOT_COURIER
+.alreadyhavecourier
 	writetext Route35GoldenrodGateRandyWeirdTreeBlockingRoadText
 	waitbutton
 	closetext
@@ -62,18 +62,16 @@ RandyScript:
 	closetext
 	end
 
-GiftSpearowMail:
+GiftFarfetchdMail:
 	db FLOWER_MAIL
 	db   "DARK CAVE leads"
 	next "to another road@"
 
-GiftSpearowName:
-	db "KENYA@"
+GiftFarfetchdName:
+	db "COURIER@"
 
-GiftSpearowOTName:
+GiftFarfetchdOTName:
 	db "RANDY@"
-
-	db 0 ; unused
 
 Route35GoldenrodGatePokefanFScript:
 	faceplayer

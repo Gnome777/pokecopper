@@ -185,17 +185,17 @@ Route31MailRecipientScript:
 	opentext
 	checkevent EVENT_GOT_TM50_NIGHTMARE
 	iftrue .DescribeNightmare
-	checkevent EVENT_GOT_KENYA
-	iftrue .TryGiveKenya
+	checkevent EVENT_GOT_COURIER
+	iftrue .TryGiveCourier
 	writetext Text_Route31SleepyMan
 	waitbutton
 	closetext
 	end
 
-.TryGiveKenya:
+.TryGiveCourier:
 	writetext Text_Route31SleepyManGotMail
 	promptbutton
-	checkpokemail ReceivedSpearowMailText
+	checkpokemail ReceivedFarfetchdMailText
 	ifequal POKEMAIL_WRONG_MAIL, .WrongMail
 	ifequal POKEMAIL_REFUSED, .Refused
 	ifequal POKEMAIL_NO_MAIL, .NoMail
@@ -205,7 +205,7 @@ Route31MailRecipientScript:
 	promptbutton
 	writetext Text_Route31ReadingMail
 	promptbutton
-	setevent EVENT_GAVE_KENYA
+	setevent EVENT_GAVE_COURIER
 	verbosegiveitem TM_NIGHTMARE
 	iffalse .NoRoomForItems
 	setevent EVENT_GOT_TM50_NIGHTMARE
@@ -240,7 +240,7 @@ Route31MailRecipientScript:
 	closetext
 	end
 
-ReceivedSpearowMailText:
+ReceivedFarfetchdMailText:
 	db   "DARK CAVE leads"
 	next "to another road@"
 
