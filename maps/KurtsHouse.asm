@@ -167,11 +167,15 @@ Kurt1:
 
 .GaveKurtApricorns:
 	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
-	setflag ENGINE_KURT_MAKING_BALLS
-.WaitForApricorns:
-	writetext KurtsHouseKurtItWillTakeADayText
+	writetext KurtsHouseKurtGetStartedText
 	waitbutton
 	closetext
+	special FadeOutToBlack
+	special ReloadSpritesNoPalettes
+	playsound SFX_WARP_TO
+	waitsfx
+	pause 35
+	sjump Kurt1
 	end
 
 .Cancel:
@@ -528,12 +532,9 @@ KurtsHouseKurtAskYouHaveAnApricornText:
 	line "into a BALL."
 	done
 
-KurtsHouseKurtItWillTakeADayText:
-	text "KURT: It'll take a"
-	line "day to make you a"
-
-	para "BALL. Come back"
-	line "for it later."
+KurtsHouseKurtGetStartedText:
+	text "KURT: I'll get"
+	line "started right now!"
 	done
 
 KurtsHouseKurtThatsALetdownText:
