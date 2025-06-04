@@ -745,7 +745,7 @@ wPokedexShinyToggle::
 ; bit 0: set if displaying shiny palettes
 	db
 wPokedexDataEnd::
-ds 1
+	ds 1
 
 NEXTU
 ; pokegear

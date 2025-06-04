@@ -270,7 +270,6 @@ _CGB_Pokedex:
 
 .is_pokemon
 	call GetMonPalettePointer
-	call LoadPalette_White_Col1_Col2_Black ; mon palette
 	ld a, [wPokedexShinyToggle]
 	and a
 	jr z, .not_shiny
@@ -280,6 +279,7 @@ _CGB_Pokedex:
 	inc hl
 	inc hl
 .not_shiny
+	call LoadPalette_White_Col1_Col2_Black ; mon palette
 .got_palette
 	call WipeAttrmap
 	hlcoord 1, 1, wAttrmap
