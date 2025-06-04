@@ -23,11 +23,12 @@ BlindingFlash:
 
 ShakeHeadbuttTree:
 	farcall ClearSpriteAnims
-	ld de, CutGrassGFX
-	ld hl, vTiles0 tile FIELDMOVE_GRASS
-	lb bc, BANK(CutGrassGFX), 4
-	call Request2bpp
-	ld de, HeadbuttTreeGFX
+	ld de, HeadbuttTreeKantoGFX ; tree frames
+	ld a, [wMapTileset]
+	cp TILESET_KANTO
+	jr z, .tree_frames_determined
+	ld de, HeadbuttTreeGFX ; tree frames
+.tree_frames_determined
 	ld hl, vTiles0 tile FIELDMOVE_TREE
 	lb bc, BANK(HeadbuttTreeGFX), 8
 	call Request2bpp
@@ -77,6 +78,8 @@ ShakeHeadbuttTree:
 
 HeadbuttTreeGFX:
 INCBIN "gfx/overworld/headbutt_tree.2bpp"
+HeadbuttTreeKantoGFX:
+INCBIN "gfx/overworld/headbutt_tree_kanto.2bpp"
 
 HideHeadbuttTree:
 	; Replaces all four headbutted tree tiles with tile $05
@@ -94,7 +97,13 @@ HideHeadbuttTree:
 	ld h, [hl]
 	ld l, a
 
+	ld a, [wMapTileset]
+	cp TILESET_KANTO
+	ld a, $2c ; grass tile
+	jr z, .replacement_tile_determined
+
 	ld a, $05 ; grass tile
+.replacement_tile_determined
 	ld [hli], a
 	ld [hld], a
 	ld bc, SCREEN_WIDTH
