@@ -28,10 +28,9 @@ It includes the following features:
 - Battle Autoprompts
 - Move Reminder
 - Infinitely reusable TMs
-- HMs renamed to FMs (Field Moves)
-- Show move name for TMs and FMs when obtained
+- Show move name for TMs when obtained
 - Fish while surfing
-- Removal of all FMs, use items instead
+- Removal of all HMs, use items instead
 - Repels will ask if you want to use another
 - Addition of a Master Repel, that acts as a toggleable infinite repel
 - Short beeping noise for low HP instead of continuous beeping
