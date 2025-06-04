@@ -672,28 +672,7 @@ BattleCommand_CheckObedience:
 	; The maximum obedience level is constrained by owned badges:
 	ld hl, wJohtoBadges
 
-	; risingbadge
-	bit RISINGBADGE, [hl]
 	ld a, MAX_LEVEL + 1
-	jr nz, .getlevel
-
-	; stormbadge
-	bit STORMBADGE, [hl]
-	ld a, 70
-	jr nz, .getlevel
-
-	; fogbadge
-	bit FOGBADGE, [hl]
-	ld a, 50
-	jr nz, .getlevel
-
-	; hivebadge
-	bit HIVEBADGE, [hl]
-	ld a, 30
-	jr nz, .getlevel
-
-	; no badges
-	ld a, 10
 
 .getlevel
 ; c = obedience level
@@ -1252,12 +1231,6 @@ BattleCommand_Stab:
 	pop bc
 	pop de
 	pop hl
-
-	push de
-	push bc
-	farcall DoBadgeTypeBoosts
-	pop bc
-	pop de
 
 	ld a, [wCurType]
 	cp b
@@ -4731,9 +4704,6 @@ CalcPlayerStats:
 
 	ld a, NUM_BATTLE_STATS
 	call CalcBattleStats
-
-	ld hl, BadgeStatBoosts
-	call CallBattleCore
 
 	call BattleCommand_SwitchTurn
 

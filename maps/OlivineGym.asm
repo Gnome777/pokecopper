@@ -137,9 +137,7 @@ Text_ReceivedMineralBadge:
 	done
 
 Jasmine_BadgeSpeech:
-	text "MINERALBADGE"
-	line "raises #MON's"
-	cont "DEFENSE."
+	text "The MINERALBADGE…"
 
 	para "…Um… Please take"
 	line "this too…"
