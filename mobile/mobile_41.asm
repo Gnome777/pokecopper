@@ -333,7 +333,6 @@ StubbedTrainerRankings_Trades:
 	jr StubbedTrainerRankings_Increment3Byte
 
 StubbedTrainerRankings_Fly:
-	ret
 	ld hl, sTrainerRankingFly
 	jr StubbedTrainerRankings_Increment3Byte
 

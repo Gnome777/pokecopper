@@ -38,7 +38,7 @@ ItemEffects:
 	dw EvoStoneEffect      ; FIRE_STONE
 	dw EvoStoneEffect      ; THUNDERSTONE
 	dw EvoStoneEffect      ; WATER_STONE
-	dw NoEffect            ; ITEM_19
+	dw ChainsawEffect      ; CHAINSAW
 	dw VitaminEffect       ; HP_UP
 	dw VitaminEffect       ; PROTEIN
 	dw VitaminEffect       ; IRON
@@ -58,12 +58,12 @@ ItemEffects:
 	dw SuperRepelEffect    ; SUPER_REPEL
 	dw MaxRepelEffect      ; MAX_REPEL
 	dw DireHitEffect       ; DIRE_HIT
-	dw NoEffect            ; ITEM_2D
+	dw AirplaneEffect      ; AIRPLANE
 	dw RestoreHPEffect     ; FRESH_WATER
 	dw RestoreHPEffect     ; SODA_POP
 	dw RestoreHPEffect     ; LEMONADE
 	dw XItemEffect         ; X_ATTACK
-	dw NoEffect            ; ITEM_32
+	dw SurfboardEffect     ; SURFBOARD
 	dw XItemEffect         ; X_DEFEND
 	dw XItemEffect         ; X_SPEED
 	dw XItemEffect         ; X_SPECIAL
@@ -103,7 +103,7 @@ ItemEffects:
 	dw NoEffect            ; BIG_MUSHROOM
 	dw NoEffect            ; SILVERPOWDER
 	dw NoEffect            ; BLU_APRICORN
-	dw NoEffect            ; ITEM_5A
+	dw MusclesEffect       ; MUSCLES
 	dw NoEffect            ; AMULET_COIN
 	dw NoEffect            ; YLW_APRICORN
 	dw NoEffect            ; GRN_APRICORN
@@ -113,7 +113,7 @@ ItemEffects:
 	dw NoEffect            ; WHT_APRICORN
 	dw NoEffect            ; BLACKBELT_I
 	dw NoEffect            ; BLK_APRICORN
-	dw NoEffect            ; ITEM_64
+	dw FlashlightEffect    ; FLASHLIGHT
 	dw NoEffect            ; PNK_APRICORN
 	dw NoEffect            ; BLACKGLASSES
 	dw NoEffect            ; SLOWPOKETAIL
@@ -133,7 +133,7 @@ ItemEffects:
 	dw NoEffect            ; MIRACLE_SEED
 	dw NoEffect            ; THICK_CLUB
 	dw NoEffect            ; FOCUS_BAND
-	dw NoEffect            ; ITEM_78
+	dw SeaBridgeEffect     ; SEA_BRIDGE
 	dw EnergypowderEffect  ; ENERGYPOWDER
 	dw EnergyRootEffect    ; ENERGY_ROOT
 	dw HealPowderEffect    ; HEAL_POWDER
@@ -148,7 +148,7 @@ ItemEffects:
 	dw NoEffect            ; STAR_PIECE
 	dw BasementKeyEffect   ; BASEMENT_KEY
 	dw NoEffect            ; PASS
-	dw NoEffect            ; ITEM_87
+	dw AntiGravityEffect   ; ANTI_GRAVITY
 	dw NoEffect            ; ITEM_88
 	dw NoEffect            ; ITEM_89
 	dw NoEffect            ; CHARCOAL
@@ -2919,4 +2919,63 @@ GetMthMoveOfCurrentMon:
 	ld c, a
 	ld b, 0
 	add hl, bc
+	ret
+
+ChainsawEffect:
+	ld a, 1
+	ld [wUsingHMItem], a
+	farcall CutFunction
+	ret
+
+AirplaneEffect:
+	ld a, 1
+	ld [wUsingHMItem], a
+	ld [wFlyingWithHMItem], a
+	farcall FlyFunction
+	ld a, [wFieldMoveSucceeded]
+	cp $2
+	jr z, .Fail
+	cp $0
+	jr z, .Error
+	farcall StubbedTrainerRankings_Fly
+	ld b, $4
+	ld a, $2
+	ret
+
+.Fail:
+	ld a, $3
+	ret
+
+.Error:
+	ld a, $0
+	ret
+
+SurfboardEffect:
+	ld a, 1
+	ld [wUsingHMItem], a
+	farcall SurfFunction
+	ret
+
+MusclesEffect:
+	ld a, 1
+	ld [wUsingHMItem], a
+	farcall StrengthFunction
+	ret
+
+FlashlightEffect:
+	ld a, 1
+	ld [wUsingHMItem], a
+	farcall FlashFunction
+	ret
+
+SeaBridgeEffect:
+	ld a, 1
+	ld [wUsingHMItem], a
+	farcall WhirlpoolFunction
+	ret
+
+AntiGravityEffect:
+	ld a, 1
+	ld [wUsingHMItem], a
+	farcall WaterfallFunction
 	ret

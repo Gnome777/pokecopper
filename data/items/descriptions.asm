@@ -25,7 +25,7 @@ ItemDescriptions:
 	dw FireStoneDesc
 	dw ThunderStoneDesc
 	dw WaterStoneDesc
-	dw TeruSama2Desc
+	dw ChainsawDesc
 	dw HPUpDesc
 	dw ProteinDesc
 	dw IronDesc
@@ -45,12 +45,12 @@ ItemDescriptions:
 	dw SuperRepelDesc
 	dw MaxRepelDesc
 	dw DireHitDesc
-	dw TeruSama3Desc
+	dw AirplaneDesc
 	dw FreshWaterDesc
 	dw SodaPopDesc
 	dw LemonadeDesc
 	dw XAttackDesc
-	dw TeruSama4Desc
+	dw SurfboardDesc
 	dw XDefendDesc
 	dw XSpeedDesc
 	dw XSpecialDesc
@@ -90,7 +90,7 @@ ItemDescriptions:
 	dw BigMushroomDesc
 	dw SilverPowderDesc
 	dw BluApricornDesc
-	dw TeruSama6Desc
+	dw MusclesDesc
 	dw AmuletCoinDesc
 	dw YlwApricornDesc
 	dw GrnApricornDesc
@@ -100,7 +100,7 @@ ItemDescriptions:
 	dw WhtApricornDesc
 	dw BlackbeltDesc
 	dw BlkApricornDesc
-	dw TeruSama7Desc
+	dw FlashlightDesc
 	dw PnkApricornDesc
 	dw BlackGlassesDesc
 	dw SlowpokeTailDesc
@@ -120,7 +120,7 @@ ItemDescriptions:
 	dw MiracleSeedDesc
 	dw ThickClubDesc
 	dw FocusBandDesc
-	dw TeruSama8Desc
+	dw SeaBridgeDesc
 	dw EnergyPowderDesc
 	dw EnergyRootDesc
 	dw HealPowderDesc
@@ -135,7 +135,7 @@ ItemDescriptions:
 	dw StarPieceDesc
 	dw BasementKeyDesc
 	dw PassDesc
-	dw TeruSama9Desc
+	dw AntigravityDesc
 	dw TeruSama10Desc
 	dw TeruSama11Desc
 	dw CharcoalDesc
@@ -354,8 +354,9 @@ WaterStoneDesc:
 	db   "Evolves certain"
 	next "kinds of #MON.@"
 
-TeruSama2Desc:
-	db   "?@"
+ChainsawDesc:
+	db   "Cuts down pesky"
+	next "plants.@"
 
 HPUpDesc:
 	db   "Raises the HP of"
@@ -433,8 +434,9 @@ DireHitDesc:
 	db   "Ups critical hit"
 	next "ratio. (1 BTL)@"
 
-TeruSama3Desc:
-	db   "?@"
+AirplaneDesc:
+	db   "Allows FLY to"
+	next "cities and towns.@"
 
 FreshWaterDesc:
 	db   "Restores #MON"
@@ -452,8 +454,9 @@ XAttackDesc:
 	db   "Raises ATTACK."
 	next "(1 BTL)@"
 
-TeruSama4Desc:
-	db   "?@"
+SurfboardDesc:
+	db   "Allows SURF"
+	next "on water.@"
 
 XDefendDesc:
 	db   "Raises DEFENSE."
@@ -608,8 +611,9 @@ SilverPowderDesc:
 BluApricornDesc:
 	db   "A blue APRICORN.@"
 
-TeruSama6Desc:
-	db   "?@"
+MusclesDesc:
+	db   "Use STRENGTH"
+	next "to push boulders.@"
 
 AmuletCoinDesc:
 	db   "Doubles monetary"
@@ -644,8 +648,9 @@ BlkApricornDesc:
 	db   "A black APRICORN."
 	next "@"
 
-TeruSama7Desc:
-	db   "?@"
+FlashlightDesc:
+	db   "A tool used to"
+	next "lighten up caves.@"
 
 PnkApricornDesc:
 	db   "A pink APRICORN."
@@ -723,8 +728,9 @@ FocusBandDesc:
 	db   "May prevent faint-"
 	next "ing. (HOLD)@"
 
-TeruSama8Desc:
-	db   "?@"
+SeaBridgeDesc:
+	db   "Allows crossing"
+	next "WHIRLPOOLs.@"
 
 EnergyPowderDesc:
 	db   "Restores #MON"
@@ -781,8 +787,9 @@ PassDesc:
 	db   "A ticket for the"
 	next "MAGNET TRAIN.@"
 
-TeruSama9Desc:
-	db   "?@"
+AntigravityDesc:
+	db   "Allows going"
+	next "up WATERFALLs.@"
 
 TeruSama10Desc:
 	db   "?@"

@@ -1768,7 +1768,7 @@ wOBP1:: db
 
 wBattleAfterAnim:: db
 
-	ds 1
+wFlyingWithHMItem:: db
 
 wOptions::
 ; bit 0-2: number of frames to delay when printing text
@@ -1808,6 +1808,7 @@ wMinutesSince:: db
 wHoursSince:: db
 wDaysSince:: db
 
+wUsingHMItem:: db
 
 SECTION "WRAM 1", WRAMX
 
