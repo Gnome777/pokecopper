@@ -56,12 +56,6 @@ SupernerdHughAfterBattleText:
 	text "I'm investigating"
 	line "MT.MORTAR, but my"
 	cont "pal's gone AWOL."
-
-	para "Have you seen a"
-	line "trainer who has a"
-
-	para "SLOWPOKE that can"
-	line "use STRENGTH?"
 	done
 
 MountMortar2FInside_MapEvents:

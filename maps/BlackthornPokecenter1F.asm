@@ -39,12 +39,12 @@ BlackthornPokecenter1FTwinText:
 	text "There was this"
 	line "move I just had"
 
-	para "to teach my #-"
-	line "MON."
+	para "to teach my"
+	line "#MON."
 
 	para "So I got the MOVE"
 	line "DELETER to make it"
-	cont "forget an FM move."
+	cont "forget another move."
 	done
 
 BlackthornPokecenter1F_MapEvents:

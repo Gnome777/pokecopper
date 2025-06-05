@@ -82,11 +82,9 @@ BirdKeeperRoyBeatenText:
 	done
 
 BirdKeeperRoyAfterBattleText:
-	text "You have #MON"
-	line "that know the FM"
-
-	para "move FLY, don't"
-	line "you? I envy you."
+	text "You have a PLANE"
+	line "TICKET, don't you?"
+	cont "I envy you."
 	done
 
 PokefanmTrevorSeenText:

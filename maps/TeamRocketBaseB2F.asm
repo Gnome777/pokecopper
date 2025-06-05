@@ -285,8 +285,8 @@ RocketBaseElectrodeScript:
 	opentext
 	writetext RocketBaseLanceElectrodeDoneText
 	promptbutton
-	verbosegiveitem HM_WHIRLPOOL
-	setevent EVENT_GOT_HM06_WHIRLPOOL
+	verbosegiveitem SEA_BRIDGE
+	setevent EVENT_GOT_SEA_BRIDGE
 	writetext RocketBaseLanceWhirlpoolText
 	waitbutton
 	closetext
@@ -733,24 +733,13 @@ RocketBaseLanceElectrodeDoneText:
 
 RocketBaseReceivedHM06Text: ; unreferenced
 	text "<PLAYER> received"
-	line "FM06."
+	line "SEA BRIDGE."
 	done
 
 RocketBaseLanceWhirlpoolText:
-	text "That's WHIRLPOOL."
-	line "Teach it to a"
-
-	para "#MON to get"
-	line "across wild water."
-
-	para "But keep this in"
-	line "mind."
-
-	para "You can use that"
-	line "out of battle only"
-
-	para "with the BADGE"
-	line "from MAHOGANY GYM."
+	text "That's a SEA BRIDGE."
+	line "You can use it to"
+	cont "cross WHIRLPOOLs."
 	done
 
 RocketBaseLanceMonMasterText:

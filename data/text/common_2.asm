@@ -342,7 +342,7 @@ _AskSurfText::
 
 _UseWaterfallText::
 	text "You used"
-	line "WATERFALL!"
+	line "ANTIGRAVITY!"
 	done
 
 _HugeWaterfallText::
@@ -351,8 +351,8 @@ _HugeWaterfallText::
 	done
 
 _AskWaterfallText::
-	text "Do you want to use"
-	line "WATERFALL?"
+	text "Do you want to go"
+	line "up the waterfall?"
 	done
 
 _UseDigText::
@@ -384,7 +384,7 @@ _CantUseTeleportText::
 	done
 
 _AlreadyUsingStrengthText::
-	text "A #MON is using"
+	text "You are using"
 	line "STRENGTH already."
 	prompt
 
@@ -400,9 +400,6 @@ _MoveBoulderText::
 	prompt
 
 _AskStrengthText::
-	text "A #MON may be"
-	line "able to move this."
-
 	para "Want to use"
 	line "STRENGTH?"
 	done
@@ -413,8 +410,8 @@ _BouldersMoveText::
 	done
 
 _BouldersMayMoveText::
-	text "A #MON may be"
-	line "able to move this."
+	text "Someone with MUSCLES"
+	line "could move this."
 	done
 
 _UseWhirlpoolText::
@@ -425,9 +422,6 @@ _UseWhirlpoolText::
 _MayPassWhirlpoolText::
 	text "It's a vicious"
 	line "whirlpool!"
-
-	para "A #MON may be"
-	line "able to pass it."
 	done
 
 _AskWhirlpoolText::

@@ -11,12 +11,12 @@ OlivineCafe_MapScripts:
 OlivineCafeStrengthSailorScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_HM04_STRENGTH
+	checkevent EVENT_GOT_MUSCLES
 	iftrue .GotStrength
 	writetext OlivineCafeStrengthSailorText
 	promptbutton
-	verbosegiveitem HM_STRENGTH
-	setevent EVENT_GOT_HM04_STRENGTH
+	verbosegiveitem MUSCLES
+	setevent EVENT_GOT_MUSCLES
 .GotStrength:
 	writetext OlivineCafeStrengthSailorText_GotStrength
 	waitbutton
@@ -30,17 +30,13 @@ OlivineCafeSailorScript:
 	jumptextfaceplayer OlivineCafeSailorText
 
 OlivineCafeStrengthSailorText:
-	text "Hah! Your #MON"
-	line "sure look like"
-	cont "lightweights!"
+	text "Hah! You sure look"
+	line "look like a"
+	cont "lightweight!"
 
-	para "They don't have"
-	line "the power to move"
-	cont "boulders aside."
-
-	para "Here, use this"
-	line "and teach them"
-	cont "STRENGTH!"
+	para "How about you work"
+	line "out and get some"
+	cont "MUSCLES!"
 	done
 
 OlivineCafeStrengthSailorText_GotStrength:

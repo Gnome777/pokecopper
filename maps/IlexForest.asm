@@ -18,7 +18,7 @@ IlexForest_MapScripts:
 	callback MAPCALLBACK_OBJECTS, IlexForestFarfetchdCallback
 
 IlexForestFarfetchdCallback:
-	checkevent EVENT_GOT_HM01_CUT
+	checkevent EVENT_GOT_CHAINSAW
 	iftrue .Static
 	readmem wFarfetchdPosition
 	ifequal  1, .PositionOne
@@ -345,12 +345,12 @@ IlexForestFarfetchdScript:
 IlexForestCharcoalMasterScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_HM01_CUT
+	checkevent EVENT_GOT_CHAINSAW
 	iftrue .AlreadyGotCut
 	writetext Text_CharcoalMasterIntro
 	promptbutton
-	verbosegiveitem HM_CUT
-	setevent EVENT_GOT_HM01_CUT
+	verbosegiveitem CHAINSAW
+	setevent EVENT_GOT_CHAINSAW
 	writetext Text_CharcoalMasterOutro
 	waitbutton
 	closetext
@@ -795,17 +795,9 @@ Text_CharcoalMasterIntro:
 	done
 
 Text_CharcoalMasterOutro:
-	text "That's the CUT FM."
-	line "Teach that to a"
-
-	para "#MON to clear"
-	line "small trees."
-
-	para "Of course, you"
-	line "have to have the"
-
-	para "GYM BADGE from"
-	line "AZALEA to use it."
+	text "That's the CHAINSAW."
+	line "USE that to clear"
+	cont "small trees."
 	done
 
 Text_CharcoalMasterTalkAfter:

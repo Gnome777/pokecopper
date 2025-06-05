@@ -64,7 +64,7 @@ SproutTower3FRivalScene:
 SageLiScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_HM05_FLASH
+	checkevent EVENT_GOT_FLASHLIGHT
 	iftrue .GotFlash
 	writetext SageLiSeenText
 	waitbutton
@@ -76,8 +76,8 @@ SageLiScript:
 	opentext
 	writetext SageLiTakeThisFlashText
 	promptbutton
-	verbosegiveitem HM_FLASH
-	setevent EVENT_GOT_HM05_FLASH
+	verbosegiveitem FLASHLIGHT
+	setevent EVENT_GOT_FLASHLIGHT
 	setevent EVENT_BEAT_SAGE_LI
 	writetext SageLiFlashExplanationText
 	waitbutton
@@ -157,7 +157,7 @@ SproutTowerElderLecturesRivalText:
 	cont "trainer."
 
 	para "As promised, here"
-	line "is your FM."
+	line "is your tool."
 
 	para "But let me say"
 	line "this: You should"
@@ -231,26 +231,15 @@ SageLiBeatenText:
 	done
 
 SageLiTakeThisFlashText:
-	text "You and your #-"
-	line "MON should have"
-
-	para "no problem using"
-	line "this move."
-
-	para "Take this FLASH"
-	line "FM."
+	text "You should have no"
+	line "problem using this"
+	cont "FLASHLIGHT."
 	done
 
 SageLiFlashExplanationText:
-	text "FLASH illuminates"
-	line "even the darkest"
-	cont "of all places."
-
-	para "But to use it out"
-	line "of battle, you"
-
-	para "need the BADGE"
-	line "from VIOLET's GYM."
+	text "A FLASHLIGHT will"
+	line "illuminate even the"
+	cont "darkest of places."
 	done
 
 SageLiAfterBattleText:
@@ -299,7 +288,7 @@ SageTroyAfterBattleText:
 	done
 
 SageNealSeenText:
-	text "The ELDER's FM"
+	text "The ELDER's tool"
 	line "lights even pitch-"
 	cont "black darkness."
 	done

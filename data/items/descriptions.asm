@@ -435,7 +435,7 @@ DireHitDesc:
 	next "ratio. (1 BTL)@"
 
 AirplaneDesc:
-	db   "Allows FLY to"
+	db   "Allows FLYing to"
 	next "cities and towns.@"
 
 FreshWaterDesc:
@@ -455,7 +455,7 @@ XAttackDesc:
 	next "(1 BTL)@"
 
 SurfboardDesc:
-	db   "Allows SURF"
+	db   "Allows SURFing"
 	next "on water.@"
 
 XDefendDesc:
@@ -789,7 +789,7 @@ PassDesc:
 
 AntigravityDesc:
 	db   "Allows going"
-	next "up WATERFALLs.@"
+	next "up waterfalls.@"
 
 TeruSama10Desc:
 	db   "?@"

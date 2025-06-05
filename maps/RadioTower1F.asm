@@ -343,8 +343,8 @@ RadioTower1FRadioCardWomanQuestion3Text:
 	text "Bull's-eye!"
 	line "Question 3:"
 
-	para "Does FM01 contain"
-	line "the move FLASH?"
+	para "Can SENTRET learn"
+	line "the move FLY?"
 	done
 
 RadioTower1FRadioCardWomanQuestion4Text:

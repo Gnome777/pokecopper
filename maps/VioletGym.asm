@@ -152,12 +152,6 @@ ReceivedZephyrBadgeText:
 	done
 
 FalknerZephyrBadgeText:
-	text "ZEPHYRBADGE lets"
-	line "#MON use FLASH,"
-
-	para "if they have it,"
-	line "anytime."
-
 	para "Here--take this"
 	line "too."
 	done

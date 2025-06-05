@@ -333,10 +333,11 @@ BirdKeeperTobyBeatenText:
 
 BirdKeeperTobyAfterBattleText:
 	text "I plan to train in"
-	line "CIANWOOD CITY to"
+	line "CIANWOOD CITY."
 
-	para "teach my #MON"
-	line "how to FLY."
+	para "Their #MON are"
+	line "weak to my bird"
+	cont "#MON!"
 	done
 
 SchoolboyChad1SeenText:

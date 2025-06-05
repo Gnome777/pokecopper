@@ -80,8 +80,8 @@ SwimmerfLoriBeatenText:
 
 SwimmerfLoriAfterBattleText:
 	text "SURF is no longer"
-	line "the only FM move"
-	cont "you use in water."
+	line "the only thing you"
+	cont "you can do in water."
 	done
 
 SwimmermCameronSeenText:

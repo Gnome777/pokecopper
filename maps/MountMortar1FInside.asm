@@ -106,12 +106,6 @@ SupernerdMarkusAfterBattleText:
 
 	para "got separated from"
 	line "my partner…"
-
-	para "Did you run into a"
-	line "trainer who uses a"
-
-	para "SEADRA that knows"
-	line "WATERFALL?"
 	done
 
 MountMortar1FInside_MapEvents:

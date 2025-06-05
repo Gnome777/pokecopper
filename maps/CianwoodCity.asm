@@ -83,7 +83,7 @@ CianwoodCitySuicuneAndEusine:
 CianwoodCityChucksWife:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_HM02_FLY
+	checkevent EVENT_GOT_AIRPLANE
 	iftrue .GotFly
 	writetext ChucksWifeEasierToFlyText
 	promptbutton
@@ -97,9 +97,9 @@ CianwoodCityChucksWife:
 .BeatChuck:
 	writetext ChucksWifeGiveHMText
 	promptbutton
-	verbosegiveitem HM_FLY
+	verbosegiveitem AIRPLANE
 	iffalse .Done
-	setevent EVENT_GOT_HM02_FLY
+	setevent EVENT_GOT_AIRPLANE
 	writetext ChucksWifeFlySpeechText
 	promptbutton
 .GotFly:
@@ -187,17 +187,11 @@ ChucksWifeEasierToFlyText:
 	line "been hard."
 
 	para "It would be much"
-	line "easier if your"
-
-	para "#MON knew how"
-	line "to FLY…"
+	line "easier if you could"
+	cont "just FLY."
 	done
 
 ChucksWifeBeatChuckText:
-	text "But you can't use"
-	line "FLY without this"
-	cont "city's GYM BADGE."
-
 	para "If you beat the"
 	line "GYM LEADER here,"
 	cont "come see me."
@@ -211,18 +205,13 @@ ChucksWifeGiveHMText:
 	line "GYM BADGE!"
 
 	para "Then you should"
-	line "take this HM."
+	line "take this."
 	done
 
 ChucksWifeFlySpeechText:
-	text "Teach FLY to your"
-	line "#MON."
-
-	para "You will be able"
-	line "to FLY instantly"
-
-	para "to anywhere you "
-	line "have visited."
+	text "Use that to FLY"
+	line "to anywhere you"
+	cont "have visited."
 	done
 
 ChucksWifeChubbyText:
@@ -236,7 +225,7 @@ ChucksWifeChubbyText:
 	done
 
 CianwoodCityYoungsterText:
-	text "If you use FLY,"
+	text "If you can FLY,"
 	line "you can get back"
 
 	para "to OLIVINE in-"

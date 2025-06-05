@@ -28,10 +28,10 @@ OlivinePokecenter1FFisherText:
 	para "door is really"
 	line "generous."
 
-	para "He taught my"
-	line "#MON STRENGTH."
+	para "He taught me how to"
+	line "use my MUSCLES."
 
-	para "Now it can move"
+	para "Now I can move"
 	line "big boulders."
 	done
 

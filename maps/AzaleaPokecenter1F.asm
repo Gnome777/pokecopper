@@ -27,13 +27,12 @@ AzaleaPokecenter1FPokefanFScript:
 
 AzaleaPokecenter1FGentlemanText:
 	text "Do your #MON"
-	line "know FM moves?"
+	line "know ROCK-type"
+	cont "moves?"
 
-	para "Those moves can"
-	line "be used even if"
-
-	para "your #MON has"
-	line "fainted."
+	para "BUG-type #MON"
+	line "are weak to"
+	cont "ROCK-TYPE moves."
 	done
 
 AzaleaPokecenter1FUnusedText: ; unreferenced
