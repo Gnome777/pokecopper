@@ -69,4 +69,5 @@ TrainerClassDVs:
 	dn 14, 14, 14, 14 ; OFFICER
 	dn 14, 14, 14, 14 ; GRUNTF
 	dn 14, 14, 14, 14 ; MYSTICALMAN
+	dn 14, 14, 14, 14 ; BOSS
 	assert_table_length NUM_TRAINER_CLASSES

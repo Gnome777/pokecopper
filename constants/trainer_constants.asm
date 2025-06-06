@@ -701,4 +701,7 @@ DEF KRIS EQU __trainer_class__
 	trainerclass MYSTICALMAN ; 43
 	const EUSINE
 
+	trainerclass BOSS ; 44
+	const GIOVANNI
+
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1
