@@ -1,6 +1,6 @@
 	db DIGLETT ; 050
 
-	db  10,  55,  25,  95,  35,  45
+	db  10,  60,  30, 100,  40,  50
 	;   hp  atk  def  spd  sat  sdf
 
 	db GROUND, GROUND ; type

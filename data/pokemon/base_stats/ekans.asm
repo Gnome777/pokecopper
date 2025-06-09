@@ -1,6 +1,6 @@
 	db EKANS ; 023
 
-	db  35,  60,  44,  55,  40,  54
+	db  40,  60,  50,  60,  40,  60
 	;   hp  atk  def  spd  sat  sdf
 
 	db POISON, POISON ; type

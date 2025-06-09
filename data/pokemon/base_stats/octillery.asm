@@ -1,6 +1,6 @@
 	db OCTILLERY ; 224
 
-	db  75, 105,  75,  45, 105,  75
+	db  80, 110,  80,  50, 110,  80
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type

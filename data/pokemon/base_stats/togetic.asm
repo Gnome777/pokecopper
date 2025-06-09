@@ -1,6 +1,6 @@
 	db TOGETIC ; 176
 
-	db  55,  40,  85,  40,  80, 105
+	db  60,  40,  90,  40,  80, 110
 	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, FLYING ; type

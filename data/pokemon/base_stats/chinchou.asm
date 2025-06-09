@@ -1,6 +1,6 @@
 	db CHINCHOU ; 170
 
-	db  75,  38,  38,  67,  56,  56
+	db  80,  40,  40,  70,  60,  60
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, ELECTRIC ; type
