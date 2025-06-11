@@ -40,21 +40,8 @@ DEF NUM_MAP_PALETTES EQU const_value
 
 ; FishGroups indexes (see data/wild/fish.asm)
 	const_def
-	const FISHGROUP_NONE
-	const FISHGROUP_SHORE
-	const FISHGROUP_OCEAN
-	const FISHGROUP_LAKE
-	const FISHGROUP_POND
-	const FISHGROUP_DRATINI
-	const FISHGROUP_QWILFISH_SWARM
-	const FISHGROUP_REMORAID_SWARM
-	const FISHGROUP_GYARADOS
-	const FISHGROUP_DRATINI_2
-	const FISHGROUP_WHIRL_ISLANDS
-	const FISHGROUP_QWILFISH
-	const FISHGROUP_REMORAID
-	const FISHGROUP_QWILFISH_NO_SWARM
-DEF NUM_FISHGROUPS EQU const_value - 1
+	const FISHGROUP
+DEF NUM_FISHGROUPS EQU const_value
 
 ; wMapConnections
 ; connection directions (see data/maps/data.asm)
