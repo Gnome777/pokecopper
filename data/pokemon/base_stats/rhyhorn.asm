@@ -3,9 +3,9 @@
 	db  80,  90, 100,  30,  30,  30
 	;   hp  atk  def  spd  sat  sdf
 
-	db GROUND, ROCK ; type
-	db 120 ; catch rate
-	db 135 ; base exp
+	db ROCK, ROCK ; type
+	db 170 ; catch rate
+	db 100 ; base exp
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	

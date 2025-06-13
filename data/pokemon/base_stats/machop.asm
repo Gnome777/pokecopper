@@ -4,8 +4,8 @@
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIGHTING, FIGHTING ; type
-	db 180 ; catch rate
-	db 88 ; base exp
+	db 255 ; catch rate
+	db 100 ; base exp
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F25 ; gender ratio
 	

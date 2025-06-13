@@ -3,9 +3,9 @@
 	db  30,  70, 100,  40,  50,  30
 	;   hp  atk  def  spd  sat  sdf
 
-	db WATER, WATER ; type
-	db 190 ; catch rate
-	db 97 ; base exp
+	db WATER, STEEL ; type
+	db 200 ; catch rate
+	db 100 ; base exp
 	db PEARL, BIG_PEARL ; items
 	db GENDER_F50 ; gender ratio
 	

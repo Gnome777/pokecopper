@@ -3,9 +3,9 @@
 	db  50,  50, 100,  40,  40,  50
 	;   hp  atk  def  spd  sat  sdf
 
-	db GROUND, GROUND ; type
-	db 190 ; catch rate
-	db 87 ; base exp
+	db GHOST, GHOST ; type
+	db 200 ; catch rate
+	db 100 ; base exp
 	db NO_ITEM, THICK_CLUB ; items
 	db GENDER_F50 ; gender ratio
 	

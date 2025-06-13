@@ -210,10 +210,13 @@ ItemEffects:
 ; NoEffect would be appropriate, with the table then being NUM_ITEMS long.
 
 PokeBallEffect:
-; BUG: The Dude's catching tutorial may crash if his Poké Ball can't be used (see docs/bugs_and_glitches.md)
 	ld a, [wBattleMode]
 	dec a
 	jp nz, UseBallInTrainerBattle
+
+	ld a, [wBattleType]
+	cp BATTLETYPE_TUTORIAL
+	jr z, .room_in_party
 
 	ld a, [wPartyCount]
 	cp PARTY_LENGTH
@@ -227,11 +230,10 @@ PokeBallEffect:
 	jp z, Ball_BoxIsFullMessage
 
 .room_in_party
-; BUG: Using a Park Ball in non-Contest battles has a corrupt animation (see docs/bugs_and_glitches.md)
 	xor a
 	ld [wWildMon], a
-	ld a, [wCurItem]
-	cp PARK_BALL
+	ld a, [wBattleType]
+	cp BATTLETYPE_CONTEST
 	call nz, ReturnToBattle_UseBall
 
 	ld hl, wOptions
@@ -270,10 +272,19 @@ PokeBallEffect:
 	jp hl
 
 .skip_or_return_from_ball_fn
+	; Apply Level Ball multiplier early so HP/status is factored correctly
 	ld a, [wCurItem]
 	cp LEVEL_BALL
+	jr nz, .not_level_ball
+
+	call LevelBallMultiplier
+	ld b, a
 	ld a, b
-	jp z, .skip_hp_calc
+	jr .continue_hp_calc
+
+	.not_level_ball
+	ld a, b
+	.continue_hp_calc
 
 	ld a, b
 	ldh [hMultiplicand + 2], a
@@ -336,12 +347,12 @@ PokeBallEffect:
 	jr nz, .statuscheck
 	ld a, 1
 .statuscheck
-; BUG: BRN/PSN/PAR do not affect catch rate (see docs/bugs_and_glitches.md)
 	ld b, a
 	ld a, [wEnemyMonStatus]
 	and 1 << FRZ | SLP_MASK
 	ld c, 10
 	jr nz, .addstatus
+	ld a, [wEnemyMonStatus]
 	and a
 	ld c, 5
 	jr nz, .addstatus
@@ -352,11 +363,10 @@ PokeBallEffect:
 	jr nc, .max_1
 	ld a, $ff
 .max_1
-
-; BUG: HELD_CATCH_CHANCE has no effect (see docs/bugs_and_glitches.md)
 	ld d, a
 	push de
 	ld a, [wBattleMonItem]
+	ld b, a
 	farcall GetItemHeldEffect
 	ld a, b
 	cp HELD_CATCH_CHANCE
@@ -440,18 +450,8 @@ PokeBallEffect:
 	push af
 	set SUBSTATUS_TRANSFORMED, [hl]
 
-; BUG: Catching a Transformed Pokémon always catches a Ditto (see docs/bugs_and_glitches.md)
 	bit SUBSTATUS_TRANSFORMED, a
-	jr nz, .ditto
-	jr .not_ditto
-
-.ditto
-	ld a, DITTO
-	ld [wTempEnemyMonSpecies], a
-	jr .load_data
-
-.not_ditto
-	set SUBSTATUS_TRANSFORMED, [hl]
+	jr nz, .load_data
 	ld hl, wEnemyBackupDVs
 	ld a, [wEnemyMonDVs]
 	ld [hli], a
@@ -753,10 +753,10 @@ ParkBallMultiplier:
 	ret
 
 HeavyBall_GetDexEntryBank:
-; BUG: Heavy Ball uses wrong weight value for three Pokémon (see docs/bugs_and_glitches.md)
 	push hl
 	push de
 	ld a, [wEnemyMonSpecies]
+	dec a
 	rlca
 	rlca
 	maskbits NUM_DEX_ENTRY_BANKS
@@ -870,10 +870,10 @@ endr
 
 .WeightsTable:
 ; weight factor, boost
-	db HIGH(2048),   0
-	db HIGH(3072),  20
-	db HIGH(4096),  30
-	db HIGH(65280), 40
+	db HIGH(1024),  10
+	db HIGH(2048),  20
+	db HIGH(4096),  40
+	db HIGH(8192),  80
 
 LureBallMultiplier:
 ; multiply catch rate by 3 if this is a fishing rod battle
@@ -913,15 +913,12 @@ MoonBallMultiplier:
 	pop bc
 	ret nz
 
-; BUG: Moon Ball does not boost catch rate (see docs/bugs_and_glitches.md)
-	inc hl
-	inc hl
 	inc hl
 
 	push bc
 	ld a, BANK("Evolutions and Attacks")
 	call GetFarByte
-	cp MOON_STONE_RED ; BURN_HEAL
+	cp MOON_STONE
 	pop bc
 	ret nz
 
@@ -973,12 +970,11 @@ LoveBallMultiplier:
 	inc d   ; female
 .got_wild_gender
 
-; BUG: Love Ball boosts catch rate for the wrong gender (see docs/bugs_and_glitches.md)
 	ld a, d
 	pop de
 	cp d
 	pop bc
-	ret nz
+	ret z
 
 	sla b
 	jr c, .max
@@ -999,61 +995,66 @@ LoveBallMultiplier:
 
 FastBallMultiplier:
 	ld a, [wTempEnemyMonSpecies]
-	ld c, a
-	ld hl, FleeMons
-	ld d, 3
+	ld [wCurSpecies], a
+	ld [wTempSpecies], a
+	call GetBaseData
+	ld a, [wBaseSpeed]
+	cp 100
+	ret c ; if Speed < 100, no boost
 
-.loop
-; BUG: Fast Ball only boosts catch rate for three Pokémon (see docs/bugs_and_glitches.md)
-	ld a, BANK(FleeMons)
-	call GetFarByte
-
-	inc hl
-	cp -1
-	jr z, .next
-	cp c
-	jr nz, .next
+	; Speed ≥ 100 → multiply catch rate by 4
 	sla b
-	jr c, .max
-
+	jr c, .overflow
 	sla b
-	ret nc
+	jr c, .overflow
 
-.max
+	ret
+
+.overflow
 	ld b, $ff
 	ret
 
-.next
-	dec d
-	jr nz, .loop
-	ret
-
 LevelBallMultiplier:
-; multiply catch rate by 8 if player mon level / 4 > enemy mon level
-; multiply catch rate by 4 if player mon level / 2 > enemy mon level
-; multiply catch rate by 2 if player mon level > enemy mon level
+	; Return a = catch rate after level ball modifier
 	ld a, [wBattleMonLevel]
 	ld c, a
 	ld a, [wEnemyMonLevel]
 	cp c
-	ret nc ; if player is lower level, we're done here
-	sla b
-	jr c, .max
+	ld a, b
+	ret nc ; No change if player level ≤ enemy
 
-	srl c
-	cp c
-	ret nc ; if player/2 is lower level, we're done here
-	sla b
+	sla a ; ×2
 	jr c, .max
+	ld d, a
 
-	srl c
-	cp c
-	ret nc ; if player/4 is lower level, we're done here
-	sla b
+	; If player's level > 2× enemy's
+	ld a, c
+	srl a
+	ld e, a
+	ld a, [wEnemyMonLevel]
+	cp e
+	ld a, d
+	ret c ; return ×2
+
+	sla a ; ×4
+	jr c, .max
+	ld d, a
+
+	; If player's level > 4× enemy's
+	ld a, c
+	srl a
+	srl a
+	ld e, a
+	ld a, [wEnemyMonLevel]
+	cp e
+	ld a, d
+	ret c ; return ×4
+
+	sla a ; ×8
 	ret nc
 
 .max
-	ld b, $ff
+	ld a, $ff
 	ret
 
 ; BallDodgedText and BallMissedText were used in Gen 1.

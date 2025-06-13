@@ -3,9 +3,9 @@
 	db  50,  70,  50,  50,  50,  50
 	;   hp  atk  def  spd  sat  sdf
 
-	db DRAGON, DRAGON ; type
-	db 45 ; catch rate
-	db 67 ; base exp
+	db DRAGON, WATER ; type
+	db 255 ; catch rate
+	db 100 ; base exp
 	db NO_ITEM, DRAGON_SCALE ; items
 	db GENDER_F50 ; gender ratio
 	

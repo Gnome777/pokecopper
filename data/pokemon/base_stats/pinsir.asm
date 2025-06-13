@@ -3,9 +3,9 @@
 	db  70, 130, 100,  90,  60,  70
 	;   hp  atk  def  spd  sat  sdf
 
-	db BUG, BUG ; type
-	db 45 ; catch rate
-	db 200 ; base exp
+	db BUG, FIGHTING ; type
+	db 128 ; catch rate
+	db 100 ; base exp
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	

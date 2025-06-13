@@ -3,9 +3,9 @@
 	db 110,  90, 130, 110,  90, 160
 	;   hp  atk  def  spd  sat  sdf
 
-	db PSYCHIC_TYPE, FLYING ; type
-	db 3 ; catch rate
-	db 220 ; base exp
+	db WATER, FLYING ; type
+	db 5 ; catch rate
+	db 100 ; base exp
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_UNKNOWN ; gender ratio
 	

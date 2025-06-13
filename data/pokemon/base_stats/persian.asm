@@ -3,9 +3,9 @@
 	db  70,  70,  60, 120,  70,  70
 	;   hp  atk  def  spd  sat  sdf
 
-	db NORMAL, NORMAL ; type
-	db 90 ; catch rate
-	db 148 ; base exp
+	db NORMAL, DARK ; type
+	db 25 ; catch rate
+	db 100 ; base exp
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	

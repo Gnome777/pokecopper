@@ -3,9 +3,9 @@
 	db  80,  80,  80, 100,  90, 100
 	;   hp  atk  def  spd  sat  sdf
 
-	db FIRE, FIRE ; type
-	db 75 ; catch rate
-	db 178 ; base exp
+	db FIRE, GHOST ; type
+	db 25 ; catch rate
+	db 100 ; base exp
 	db BURNT_BERRY, BURNT_BERRY ; items
 	db GENDER_F75 ; gender ratio
 	

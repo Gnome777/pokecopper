@@ -4,8 +4,8 @@
 	;   hp  atk  def  spd  sat  sdf
 
 	db BUG, POISON ; type
-	db 45 ; catch rate
-	db 159 ; base exp
+	db 128 ; catch rate
+	db 100 ; base exp
 	db NO_ITEM, POISON_BARB ; items
 	db GENDER_F50 ; gender ratio
 	

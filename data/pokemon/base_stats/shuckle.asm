@@ -4,8 +4,8 @@
 	;   hp  atk  def  spd  sat  sdf
 
 	db BUG, ROCK ; type
-	db 190 ; catch rate
-	db 80 ; base exp
+	db 128 ; catch rate
+	db 100 ; base exp
 	db BERRY, BERRY ; items
 	db GENDER_F50 ; gender ratio
 	

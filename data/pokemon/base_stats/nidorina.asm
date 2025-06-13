@@ -4,8 +4,8 @@
 	;   hp  atk  def  spd  sat  sdf
 
 	db POISON, POISON ; type
-	db 120 ; catch rate
-	db 117 ; base exp
+	db 43 ; catch rate
+	db 100 ; base exp
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F100 ; gender ratio
 	
@@ -14,7 +14,7 @@
 	INCBIN "gfx/pokemon/nidorina/front.dimensions"
 	
 	db GROWTH_MEDIUM_SLOW ; growth rate
-	dn EGG_NONE, EGG_NONE ; egg groups
+	dn EGG_MONSTER, EGG_GROUND ; egg groups
 
 	; tm/hm learnset
 	tmhm HEADBUTT, CURSE, TOXIC, ROCK_SMASH, HIDDEN_POWER, SUNNY_DAY, SNORE, BLIZZARD, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, IRON_TAIL, THUNDER, RETURN, MUD_SLAP, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, DEFENSE_CURL, DETECT, REST, ATTRACT, THIEF, THUNDERBOLT, ICE_BEAM

@@ -4,8 +4,8 @@
 	;   hp  atk  def  spd  sat  sdf
 
 	db ROCK, FLYING ; type
-	db 45 ; catch rate
-	db 202 ; base exp
+	db 32 ; catch rate
+	db 100 ; base exp
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F12_5 ; gender ratio
 	

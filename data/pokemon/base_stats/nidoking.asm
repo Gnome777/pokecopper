@@ -3,9 +3,9 @@
 	db  90, 100,  80,  90,  90,  80
 	;   hp  atk  def  spd  sat  sdf
 
-	db POISON, GROUND ; type
-	db 45 ; catch rate
-	db 195 ; base exp
+	db POISON, FIGHTING ; type
+	db 32 ; catch rate
+	db 100 ; base exp
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F0 ; gender ratio
 	

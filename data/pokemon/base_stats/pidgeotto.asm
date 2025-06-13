@@ -3,9 +3,9 @@
 	db  70,  60,  60,  80,  50,  50
 	;   hp  atk  def  spd  sat  sdf
 
-	db NORMAL, FLYING ; type
-	db 120 ; catch rate
-	db 113 ; base exp
+	db FLYING, FLYING ; type
+	db 170 ; catch rate
+	db 100 ; base exp
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	

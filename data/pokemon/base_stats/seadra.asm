@@ -4,8 +4,8 @@
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type
-	db 75 ; catch rate
-	db 155 ; base exp
+	db 170 ; catch rate
+	db 100 ; base exp
 	db NO_ITEM, DRAGON_SCALE ; items
 	db GENDER_F50 ; gender ratio
 	

@@ -4,8 +4,8 @@
 	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, NORMAL ; type
-	db 25 ; catch rate
-	db 129 ; base exp
+	db 32 ; catch rate
+	db 100 ; base exp
 	db MYSTERYBERRY, MOON_STONE ; items
 	db GENDER_F75 ; gender ratio
 	

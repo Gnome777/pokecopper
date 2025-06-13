@@ -4,8 +4,8 @@
 	;   hp  atk  def  spd  sat  sdf
 
 	db GRASS, FLYING ; type
-	db 120 ; catch rate
-	db 136 ; base exp
+	db 170 ; catch rate
+	db 100 ; base exp
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	

@@ -3,9 +3,9 @@
 	db  90,  90,  90,  80,  80,  90
 	;   hp  atk  def  spd  sat  sdf
 
-	db POISON, GROUND ; type
-	db 45 ; catch rate
-	db 194 ; base exp
+	db POISON, POISON ; type
+	db 32 ; catch rate
+	db 100 ; base exp
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F100 ; gender ratio
 	
@@ -14,7 +14,7 @@
 	INCBIN "gfx/pokemon/nidoqueen/front.dimensions"
 	
 	db GROWTH_MEDIUM_SLOW ; growth rate
-	dn EGG_NONE, EGG_NONE ; egg groups
+	dn EGG_MONSTER, EGG_GROUND ; egg groups
 
 	; tm/hm learnset
 	tmhm DYNAMICPUNCH, HEADBUTT, CURSE, ROAR, TOXIC, ROCK_SMASH, HIDDEN_POWER, SUNNY_DAY, SNORE, BLIZZARD, HYPER_BEAM, ICY_WIND, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, IRON_TAIL, THUNDER, EARTHQUAKE, RETURN, SHADOW_BALL, MUD_SLAP, DOUBLE_TEAM, ICE_PUNCH, SWAGGER, SLEEP_TALK, SANDSTORM, FIRE_BLAST, DEFENSE_CURL, THUNDERPUNCH, DETECT, REST, ATTRACT, THIEF, FIRE_PUNCH, FURY_CUTTER, FLAMETHROWER, THUNDERBOLT, ICE_BEAM
