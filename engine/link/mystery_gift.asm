@@ -38,16 +38,9 @@ DoMysteryGift:
 	farcall StageDataForMysteryGift
 	call ClearMysteryGiftTrainer
 	vc_patch Infrared_stage_party_data
-if DEF(_CRYSTAL11_VC)
 	farcall StagePartyDataForMysteryGift
 	call ClearMysteryGiftTrainer
 	nop
-else
-	ld a, 2
-	ld [wMysteryGiftMessageCount], a
-	ld a, wMysteryGiftPartnerDataEnd - wMysteryGiftPartnerData
-	ld [wMysteryGiftStagedDataLength], a
-endc
 	vc_patch_end
 
 	ldh a, [rIE]
@@ -271,7 +264,6 @@ endc
 ExchangeMysteryGiftData:
 	vc_hook Infrared_ExchangeMysteryGiftData_start
 	vc_patch Infrared_ExchangeMysteryGiftData_function
-if DEF(_CRYSTAL11_VC)
 	ld d, $ef
 .loop
 	dec d
@@ -288,16 +280,6 @@ if DEF(_CRYSTAL11_VC)
 	cp MG_OKAY
 	jr nz, ExchangeMysteryGiftData
 	ret
-else
-	di
-	farcall ClearChannels
-	call InitializeIRCommunicationInterrupts
-
-.restart
-	call BeginIRCommunication
-	call InitializeIRCommunicationRoles
-	ldh a, [hMGStatusFlags]
-endc
 	vc_patch_end
 	cp MG_CANCELED
 	jp z, EndOrContinueMysteryGiftIRCommunication

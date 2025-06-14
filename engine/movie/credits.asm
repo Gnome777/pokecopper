@@ -77,8 +77,9 @@ Credits::
 
 	call GetCreditsPalette
 	call SetDefaultBGPAndOBP
-; BUG: Credits sequence changes move selection menu behavior (see docs/bugs_and_glitches.md)
 	ldh a, [hVBlank]
+	ldh a, [hInMenu]
+	push af
 	push af
 	ld a, VBLANK_CREDITS
 	ldh [hVBlank], a
@@ -104,6 +105,8 @@ Credits::
 	xor a
 	ldh [hLCDCPointer], a
 	ldh [hBGMapAddress], a
+	pop af
+	ldh [hInMenu], a
 	pop af
 	ldh [hVBlank], a
 	pop af
