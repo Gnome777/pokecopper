@@ -152,13 +152,9 @@ GetCaughtLevel:
 	call ByteFill
 
 	; caught level
-	; Limited to between 1 and 63 since it's a 6-bit quantity.
+	; Now supports levels up to 127 using 7 bits
 	ld a, [wSeerCaughtData]
 	and CAUGHT_LEVEL_MASK
-	jr z, .unknown
-	cp CAUGHT_EGG_LEVEL ; egg marker value
-	jr nz, .print
-	ld a, EGG_LEVEL ; egg hatch level
 
 .print
 	ld [wSeerCaughtLevel], a
@@ -181,29 +177,26 @@ GetCaughtLevel:
 GetCaughtTime:
 	ld a, [wSeerCaughtData]
 	and CAUGHT_TIME_MASK
-	jr z, .none
+	jr z, .daytime
 
-	rlca
-	rlca
-	dec a
-	ld hl, .times
-	call GetNthString
-	ld d, h
-	ld e, l
-	ld hl, wSeerTimeOfDay
-	call CopyName2
+.night
+	ld hl, CaughtTimeNight
+	jr .copy
+
+.daytime
+	ld hl, CaughtTimeDay
+
+.copy
+	ld de, wSeerTimeOfDay
+	ld bc, NAME_LENGTH
+	call CopyBytes
 	and a
 	ret
 
-.none
-	ld de, wSeerTimeOfDay
-	call UnknownCaughtData
-	ret
-
-.times
-	db "Morning@"
-	db "Day@"
+CaughtTimeNight:
 	db "Night@"
+CaughtTimeDay:
+	db "Day@"
 
 UnknownCaughtData:
 	ld hl, .unknown
