@@ -137,12 +137,12 @@ ItemDescriptions:
 	dw PassDesc
 	dw AntigravityDesc
 	dw PocketPCDesc
-	dw TeruSama11Desc
+	dw HelixFossilDesc
 	dw CharcoalDesc
 	dw BerryJuiceDesc
 	dw ScopeLensDesc
-	dw TeruSama12Desc
-	dw TeruSama13Desc
+	dw DomeFossilDesc
+	dw OldAmberDesc
 	dw MetalCoatDesc
 	dw DragonFangDesc
 	dw TeruSama14Desc
@@ -795,8 +795,9 @@ PocketPCDesc:
 	db   "Access the PC"
 	next "right here!@"
 
-TeruSama11Desc:
-	db   "?@"
+HelixFossilDesc:
+	db   "A fossilized"
+	next "#MON shell."
 
 CharcoalDesc:
 	db   "Powers up fire-"
@@ -810,11 +811,13 @@ ScopeLensDesc:
 	db   "Raises critical"
 	next "hit ratio. (HOLD)@"
 
-TeruSama12Desc:
-	db   "?@"
+DomeFossilDesc:
+	db   "A fossilized"
+	next "#MON shell."
 
-TeruSama13Desc:
-	db   "?@"
+OldAmberDesc:
+	db   "Fossilized resin"
+	next "containing DNA."
 
 MetalCoatDesc:
 	db   "Powers up steel-"
