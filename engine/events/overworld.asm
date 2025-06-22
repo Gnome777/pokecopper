@@ -1238,12 +1238,21 @@ HeadbuttScript:
 	callasm ShakeHeadbuttTree
 
 	callasm TreeMonEncounter
-	iffalse .no_battle
+	iffalse .try_tree_item
 	closetext
 	randomwildmon
 	startbattle
 	reloadmapafterbattle
 	end
+
+.try_tree_item
+	callasm TreeItemEncounter
+	iffalse .no_battle
+	opentext
+	verbosegiveitem ITEM_FROM_MEM
+	closetext
+	end
+
 
 .no_battle
 	writetext HeadbuttNothingText
@@ -1339,11 +1348,18 @@ RockSmashScript:
 
 	callasm RockMonEncounter
 	readmem wTempWildMonSpecies
-	iffalse .done
+	iffalse .no_battle
 	randomwildmon
 	startbattle
 	reloadmapafterbattle
-.done
+	end
+.no_battle
+	callasm RockItemEncounter
+	iffalse .no_item
+	opentext
+	verbosegiveitem ITEM_FROM_MEM
+	closetext
+.no_item
 	end
 
 MovementData_RockSmash:
