@@ -1654,7 +1654,7 @@ wMenuBorderBottomCoord:: db
 wMenuBorderRightCoord:: db
 wMenuDataPointer:: dw
 wMenuCursorPosition:: db
-	ds 1
+wBuffer1:: db
 wMenuDataBank:: db
 	ds 6
 wMenuHeaderEnd::
