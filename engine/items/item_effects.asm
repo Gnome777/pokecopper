@@ -149,7 +149,7 @@ ItemEffects:
 	dw BasementKeyEffect   ; BASEMENT_KEY
 	dw NoEffect            ; PASS
 	dw AntiGravityEffect   ; ANTI_GRAVITY
-	dw NoEffect            ; ITEM_88
+	dw PocketPCEffect      ; POCKET_PC
 	dw NoEffect            ; ITEM_89
 	dw NoEffect            ; CHARCOAL
 	dw RestoreHPEffect     ; BERRY_JUICE
@@ -2992,4 +2992,8 @@ AntiGravityEffect:
 	ld a, 1
 	ld [wUsingHMItem], a
 	farcall WaterfallFunction
+	ret
+
+PocketPCEffect:
+	farcall PocketPCFunction
 	ret

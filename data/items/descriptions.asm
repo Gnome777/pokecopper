@@ -136,7 +136,7 @@ ItemDescriptions:
 	dw BasementKeyDesc
 	dw PassDesc
 	dw AntigravityDesc
-	dw TeruSama10Desc
+	dw PocketPCDesc
 	dw TeruSama11Desc
 	dw CharcoalDesc
 	dw BerryJuiceDesc
@@ -791,8 +791,9 @@ AntigravityDesc:
 	db   "Allows going"
 	next "up waterfalls.@"
 
-TeruSama10Desc:
-	db   "?@"
+PocketPCDesc:
+	db   "Access the PC"
+	next "right here!@"
 
 TeruSama11Desc:
 	db   "?@"

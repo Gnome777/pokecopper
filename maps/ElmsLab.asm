@@ -459,23 +459,33 @@ ElmJumpRightScript:
 AideScript_WalkPotion1:
 	applymovement ELMSLAB_ELMS_AIDE, AideWalksRight1
 	turnobject PLAYER, DOWN
-	scall AideScript_GivePotion
+	scall AideScript_GivePocketPC
 	applymovement ELMSLAB_ELMS_AIDE, AideWalksLeft1
 	end
 
 AideScript_WalkPotion2:
 	applymovement ELMSLAB_ELMS_AIDE, AideWalksRight2
 	turnobject PLAYER, DOWN
-	scall AideScript_GivePotion
+	scall AideScript_GivePocketPC
 	applymovement ELMSLAB_ELMS_AIDE, AideWalksLeft2
 	end
 
-AideScript_GivePotion:
+; AideScript_GivePotion:
+; 	opentext
+; 	writetext AideText_GetPocketPCText
+; 	promptbutton
+; 	verbosegiveitem POCKET_PC
+; 	writetext AideText_AlwaysBusy
+; 	waitbutton
+; 	closetext
+; 	end
+
+AideScript_GivePocketPC:
 	opentext
-	writetext AideText_GiveYouPotion
+	writetext AideText_GetPocketPCText
 	promptbutton
-	verbosegiveitem POTION
-	writetext AideText_AlwaysBusy
+	giveitem POCKET_PC
+	writetext AideText_PocketPCInfoText
 	waitbutton
 	closetext
 	setscene SCENE_ELMSLAB_NOOP
@@ -1215,10 +1225,15 @@ ElmsLabMonEggText: ; unreferenced
 	cont "by PROF.ELM."
 	done
 
-AideText_GiveYouPotion:
+AideText_GetPocketPCText:
 	text "<PLAY_G>, I want"
 	line "you to have this"
 	cont "for your errand."
+	done
+
+AideText_PocketPCInfoText:
+	text "Use this to manage"
+	line "your party."
 	done
 
 AideText_AlwaysBusy:

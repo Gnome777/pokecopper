@@ -135,7 +135,7 @@ ItemNames::
 	li "BASEMENT KEY"
 	li "PASS"
 	li "ANTI GRAVITY"
-	li "TERU-SAMA"
+	li "POCKET PC"
 	li "TERU-SAMA"
 	li "CHARCOAL"
 	li "BERRY JUICE"
