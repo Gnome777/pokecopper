@@ -52,20 +52,9 @@ GoldenrodDeptStore4FBugCatcherText:
 	done
 
 GoldenrodDeptStore4FGameboyKidText:
-	text "Some #MON"
-	line "evolve only by"
-
-	para "being traded via a"
-	line "Game Link cable."
-
-	para "I know of four:"
-	line "MACHOKE, KADABRA,"
-
-	para "HAUNTER and, um,"
-	line "GRAVELER."
-
-	para "I heard there are"
-	line "others too."
+	text "Did you know that"
+	line "#MON can hold"
+	cont "items?"
 	done
 
 GoldenrodDeptStore4FDirectoryText:
