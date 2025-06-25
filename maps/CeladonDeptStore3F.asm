@@ -57,27 +57,18 @@ CeladonDeptStore3FYoungsterText:
 
 CeladonDeptStore3FGameboyKid1Text:
 	text "Uh-oh! I traded my"
-	line "#MON without"
-
-	para "removing the UP-"
-	line "GRADE from it."
+	line "rare #MON!"
 	done
 
 CeladonDeptStore3FGameboyKid2Text:
 	text "Yeah! I'm finally"
-	line "getting a PORYGON!"
+	line "getting a SQUIRTLE!"
 
 	para "I'm no good at the"
 	line "slots, so I could"
 
 	para "never get enough"
 	line "coins…"
-
-	para "…Huh?"
-
-	para "The traded PORYGON"
-	line "turned into a dif-"
-	cont "ferent #MON!"
 	done
 
 CeladonDeptStore3FSuperNerdText:

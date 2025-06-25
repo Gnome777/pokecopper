@@ -43,8 +43,8 @@ PalletTownFisherText:
 	line "incredible!"
 
 	para "You can now trade"
-	line "#MON across"
-	cont "time like e-mail."
+	line "#MON across like"
+	cont "e-mail."
 	done
 
 PalletTownSignText:

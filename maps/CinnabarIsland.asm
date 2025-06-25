@@ -100,11 +100,8 @@ CinnabarIslandBlueText:
 	cont "me want to battle."
 
 	para "If you want to"
-	line "battle me, come to"
-	cont "the VIRIDIAN GYM."
-
-	para "I'll take you on"
-	line "then."
+	line "battle me, come"
+	cont "find me."
 	done
 
 CinnabarIslandGymSignText:
