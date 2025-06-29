@@ -66,7 +66,7 @@ EvolveAfterBattle_MasterLoop:
 	ld b, a
 
 	cp EVOLVE_TRADE
-	jr z, .trade
+	jp z, .trade
 
 	ld a, [wLinkMode]
 	and a
@@ -108,15 +108,29 @@ EvolveAfterBattle_MasterLoop:
 	ld a, ATK_LT_DEF
 	jr c, .got_tyrogue_evo
 	ld a, ATK_GT_DEF
+
+	; new comparison: Speed > both Atk and Def
+	ld b, a ; save previous result
+	ld a, [wTempMonSpeed]
+	ld d, a
+	ld a, [wTempMonAttack]
+	cp d
+	jr nc, .not_speed_gt
+	ld a, [wTempMonDefense]
+	cp d
+	jr nc, .not_speed_gt
+	ld a, SPD_GT_ATK_DEF
 .got_tyrogue_evo
 	pop hl
-
 	inc hl
 	cp [hl]
 	jp nz, .dont_evolve_2
-
 	inc hl
 	jp .proceed
+
+.not_speed_gt
+	ld a, b
+	jr .got_tyrogue_evo
 
 .happiness
 	ld a, [wTempMonHappiness]
