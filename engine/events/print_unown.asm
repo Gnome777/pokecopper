@@ -70,13 +70,10 @@ _UnownPrinter:
 	call JoyTextDelay
 
 	ldh a, [hJoyPressed]
-	and B_BUTTON
+	and PAD_B
 	jr nz, .pressed_b
 
 	ldh a, [hJoyPressed]
-	vc_patch Forbid_printing_Unown
-	and NO_INPUT
-	vc_patch_end
 	jr nz, .pressed_a
 
 	call .LeftRight
@@ -102,10 +99,10 @@ _UnownPrinter:
 
 .LeftRight:
 	ldh a, [hJoyLast]
-	and D_RIGHT
+	and PAD_RIGHT
 	jr nz, .press_right
 	ldh a, [hJoyLast]
-	and D_LEFT
+	and PAD_LEFT
 	jr nz, .press_left
 	ret
 
@@ -155,10 +152,10 @@ _UnownPrinter:
 	ret
 
 .Load2bppToSRAM:
-	ldh a, [rSVBK]
+	ldh a, [rWBK]
 	push af
 	ld a, BANK(wDecompressScratch)
-	ldh [rSVBK], a
+	ldh [rWBK], a
 
 	ld a, BANK(sScratch)
 	call OpenSRAM
@@ -171,7 +168,7 @@ _UnownPrinter:
 	call CloseSRAM
 
 	pop af
-	ldh [rSVBK], a
+	ldh [rWBK], a
 	ret
 
 .vacant
@@ -221,7 +218,7 @@ INCBIN "gfx/printer/bold_b.1bpp"
 
 PlaceUnownPrinterFrontpic:
 	hlcoord 0, 0
-	ld bc, SCREEN_WIDTH * SCREEN_HEIGHT
+	ld bc, SCREEN_AREA
 	ld a, " "
 	call ByteFill
 	hlcoord 7, 11

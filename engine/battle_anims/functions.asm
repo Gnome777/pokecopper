@@ -431,6 +431,26 @@ BattleAnimFunc_PokeBallBlocked:
 	ret
 
 GetBallAnimPal:
+	ld hl, BallColors
+	ldh a, [rWBK]
+	push af
+	ld a, BANK(wCurItem)
+	ldh [rWBK], a
+	ld a, [wCurItem]
+	ld e, a
+	pop af
+	ldh [rWBK], a
+.IsInArray:
+	ld a, [hli]
+	cp -1
+	jr z, .load
+	cp e
+	jr z, .load
+	inc hl
+	jr .IsInArray
+
+.load
+	ld a, [hl]
 	ld hl, BATTLEANIMSTRUCT_PALETTE
 	add hl, bc
 	ld [hl], PAL_BATTLE_OB_RED
@@ -922,7 +942,7 @@ BattleAnimFunc_RazorLeaf:
 	call ReinitBattleAnimFrameset
 	ld hl, BATTLEANIMSTRUCT_OAMFLAGS
 	add hl, bc
-	res OAM_X_FLIP, [hl]
+	res B_OAM_XFLIP, [hl]
 .four
 .five
 .six
@@ -2633,7 +2653,7 @@ BattleAnimFunc_String:
 	; Obj Param 0 flips when used by enemy
 	ld hl, BATTLEANIMSTRUCT_OAMFLAGS
 	add hl, bc
-	set OAM_Y_FLIP, [hl]
+	set B_OAM_YFLIP, [hl]
 .not_param_zero
 	assert BATTLE_ANIM_FRAMESET_STRING_SHOT_1 + 1 == BATTLE_ANIM_FRAMESET_STRING_SHOT_2 \
 		&& BATTLE_ANIM_FRAMESET_STRING_SHOT_2 + 1 == BATTLE_ANIM_FRAMESET_STRING_SHOT_3
