@@ -38,3 +38,4 @@ gfx/pokemon/*/frames.asm
 *.sa*
 *.sg1
 pokecrystal.ss0
+*.json
