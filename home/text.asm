@@ -221,7 +221,7 @@ ENDM
 	dict "<ROUTE>",   PlaceJPRoute
 	dict "<WATASHI>", PlaceWatashi
 	dict "<KOKO_WA>", PlaceKokoWa
-	dict "<RED>",     PrintRedsName
+	dict "<???>",     PrintRedsName
 	dict "<GREEN>",   PrintGreensName
 	dict "#",         PlacePOKe
 	dict "<PC>",      PCChar

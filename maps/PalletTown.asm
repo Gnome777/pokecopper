@@ -55,7 +55,7 @@ PalletTownSignText:
 	done
 
 RedsHouseSignText:
-	text "RED'S HOUSE"
+	text "???'S HOUSE"
 	done
 
 OaksLabSignText:

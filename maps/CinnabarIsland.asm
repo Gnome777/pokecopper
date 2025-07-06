@@ -54,7 +54,7 @@ CinnabarIslandBlueText:
 	para "it was for only a"
 	line "short time…"
 
-	para "That meddling RED"
+	para "That meddling kid"
 	line "did me in…"
 
 	para "Anyway, what do"
